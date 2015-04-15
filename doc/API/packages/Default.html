@@ -1,0 +1,340 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>ZSO10 App – API » Default</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">ZSO10 App – API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Config.html"><i class="icon-th"></i> Config</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Default.html" title="Default"><i class="icon-folder-open"></i>Default</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#function_checkAttrib" title="checkAttrib() :: Check if GET attribute exists and execute error if necessary."><span class="description">Check if GET attribute exists and execute error if necessary.</span><pre>checkAttrib</pre></a></li>
+<li class="function  "><a href="#function_close" title="close() :: End XML document and exit."><span class="description">End XML document and exit.</span><pre>close</pre></a></li>
+<li class="function  "><a href="#function_errorAttribNotValid" title="errorAttribNotValid() :: Throw attribute not valid error."><span class="description">Throw attribute not valid error.</span><pre>errorAttribNotValid</pre></a></li>
+<li class="function  "><a href="#function_validate_date" title="validate_date() :: Validate if given date is in right format to prevent from SQL injection."><span class="description">Validate if given date is in right format to prevent from SQL injection.</span><pre>validate_date</pre></a></li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#APIError" title="Enum static class for handling error reporting.">APIError</a></li>
+<li><a href="#BasicEnum" title="Enumerator base class">BasicEnum</a></li>
+<li class="nav-header">
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#constant_VERSION_API" title="VERSION_API() :: "><span class="description">VERSION_API</span><pre>VERSION_API</pre></a></li>
+<li class="constant  "><a href="#constant_VERSION_APP_ANDROID" title="VERSION_APP_ANDROID() :: "><span class="description">VERSION_APP_ANDROID</span><pre>VERSION_APP_ANDROID</pre></a></li>
+<li class="constant  "><a href="#constant_XML_API_CLOSE" title="XML_API_CLOSE() :: XML API closing tag"><span class="description">XML API closing tag</span><pre>XML_API_CLOSE</pre></a></li>
+<li class="constant  "><a href="#constant_XML_API_OPEN" title="XML_API_OPEN() :: XML API opening tag"><span class="description">XML API opening tag</span><pre>XML_API_OPEN</pre></a></li>
+<li class="constant  "><a href="#constant_XML_HEADER" title="XML_HEADER() :: XML header tag."><span class="description">XML header tag.</span><pre>XML_HEADER</pre></a></li>
+<li class="constant  "><a href="#constant_database" title="database() :: Main ZSO10 App database name"><span class="description">Main ZSO10 App database name</span><pre>database</pre></a></li>
+<li class="constant  "><a href="#constant_host" title="host() :: Database hostname"><span class="description">Database hostname</span><pre>host</pre></a></li>
+<li class="constant  "><a href="#constant_password" title="password() :: Database password"><span class="description">Database password</span><pre>password</pre></a></li>
+<li class="constant  "><a href="#constant_port" title="port() :: Database connection port"><span class="description">Database connection port</span><pre>port</pre></a></li>
+<li class="constant  "><a href="#constant_table_prefix" title="table_prefix() :: Table name prefix."><span class="description">Table name prefix.</span><pre>table_prefix</pre></a></li>
+<li class="constant  "><a href="#constant_user" title="user() :: Database user name"><span class="description">Database user name</span><pre>user</pre></a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Default.html">Default</a></li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
+<a xmlns:php="http://php.net/xsl" id="function_checkAttrib"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_checkAttrib " data-toggle="collapse" data-target=".function_checkAttrib .collapse" title="">
+<h2>Check if GET attribute exists and execute error if necessary.</h2>
+<pre>checkAttrib(string $name, boolean $exec_error<code> = true</code>) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>attribute name</p></div>
+<div class="subelement argument">
+<h4>$exec_error</h4>
+<code>boolean</code><p>if has to exec error if not found</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>attribute exists</div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_close"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_close " data-toggle="collapse" data-target=".function_close .collapse" title="">
+<h2>End XML document and exit.</h2>
+<pre>close() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_errorAttribNotValid"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_errorAttribNotValid " data-toggle="collapse" data-target=".function_errorAttribNotValid .collapse" title="">
+<h2>Throw attribute not valid error.</h2>
+<pre>errorAttribNotValid(string $attrib, string $valid<code> = ''</code>, string $msg<code> = ''</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$attrib</h4>
+<code>string</code><p>attribute name</p></div>
+<div class="subelement argument">
+<h4>$valid</h4>
+<code>string</code><p>the best valid value of attrib (not mandatory)</p></div>
+<div class="subelement argument">
+<h4>$msg</h4>
+<code>string</code><p>additional error message (not mandatory)</p></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_validate_date"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_validate_date " data-toggle="collapse" data-target=".function_validate_date .collapse" title="">
+<h2>Validate if given date is in right format to prevent from SQL injection.</h2>
+<pre>validate_date(string $date) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Date should be in format 'Y-m-d'. If it's not parse endError is thrown.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CAPIError::endError()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CAPIError::parse"></a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$date</h4>
+<code>string</code><p>date to validate</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>if valid</div>
+</div></div>
+</div>
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="APIError" class="element ajax clickable class">
+<h1>APIError<a href="../classes/APIError.html">¶</a>
+</h1>
+<p class="short_description">Enum static class for handling error reporting.</p>
+<div class="details collapse"></div>
+<a href="../classes/APIError.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="BasicEnum" class="element ajax clickable class">
+<h1>BasicEnum<a href="../classes/BasicEnum.html">¶</a>
+</h1>
+<p class="short_description">Enumerator base class</p>
+<div class="details collapse"></div>
+<a href="../classes/BasicEnum.html" class="more">« More »</a>
+</div>
+<h3>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a xmlns:php="http://php.net/xsl" id="constant_VERSION_API"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_VERSION_API" data-toggle="collapse" data-target=".constant_VERSION_API .collapse" title="">
+<h2>VERSION_API</h2>
+<pre>VERSION_API = $row['value'] </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_VERSION_APP_ANDROID"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_VERSION_APP_ANDROID" data-toggle="collapse" data-target=".constant_VERSION_APP_ANDROID .collapse" title="">
+<h2>VERSION_APP_ANDROID</h2>
+<pre>VERSION_APP_ANDROID = $row['value'] </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_XML_API_CLOSE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_XML_API_CLOSE" data-toggle="collapse" data-target=".constant_XML_API_CLOSE .collapse" title="">
+<h2>XML API closing tag</h2>
+<pre>XML_API_CLOSE = '&lt;/api&gt;' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_XML_API_OPEN"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_XML_API_OPEN" data-toggle="collapse" data-target=".constant_XML_API_OPEN .collapse" title="">
+<h2>XML API opening tag</h2>
+<pre>XML_API_OPEN = '&lt;api version="' . VERSION_API . '"&gt;' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_XML_HEADER"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_XML_HEADER" data-toggle="collapse" data-target=".constant_XML_HEADER .collapse" title="">
+<h2>XML header tag.</h2>
+<pre>XML_HEADER = '&lt;?xml version="1.0" encoding="UTF-8"?&gt;' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_database"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_database" data-toggle="collapse" data-target=".constant_database .collapse" title="">
+<h2>Main ZSO10 App database name</h2>
+<pre>database = 'zso10app' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_host"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_host" data-toggle="collapse" data-target=".constant_host .collapse" title="">
+<h2>Database hostname</h2>
+<pre>host = 'localhost' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_password"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_password" data-toggle="collapse" data-target=".constant_password .collapse" title="">
+<h2>Database password</h2>
+<pre>password = 'fsadpass1029' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_port"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_port" data-toggle="collapse" data-target=".constant_port .collapse" title="">
+<h2>Database connection port</h2>
+<pre>port = '3306' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_table_prefix"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_table_prefix" data-toggle="collapse" data-target=".constant_table_prefix .collapse" title="">
+<h2>Table name prefix.</h2>
+<pre>table_prefix = 'app_' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>For example: app_lucky</p></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_user"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_user" data-toggle="collapse" data-target=".constant_user .collapse" title="">
+<h2>Database user name</h2>
+<pre>user = 'zso10app' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.2</a> and<br>
+            generated on 2015-04-15T09:00:15+02:00.<br></footer></div>
+</div>
+</body>
+</html>
