@@ -1,179 +1,1449 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project title="ZSO10 App – API" version="2.8.2">
   <partials/>
-  <file path="modules/lucky.php" generated-path="modules.lucky.html" hash="ca3391779c45c1bf8891da1139f0808e" package="Default">
+  <file path="modules/lucky.php" generated-path="modules.lucky.html" hash="cd06111ed54701c5d98efc7d11f43fd4" package="Default">
     <docblock line="0">
-      <description></description>
-      <long-description></long-description>
-      <tag name="package" line="0" description="Default"/>
-    </docblock>
-    <function namespace="" line="44" package="Default">
-      <name>validate_date</name>
-      <full_name>\validate_date()</full_name>
-      <docblock line="44">
-        <description>Validate if given date is in right format to prevent from SQL injection.</description>
-        <long-description>Date should be in format 'Y-m-d'. If it's not parse endError is thrown.</long-description>
-        <tag name="package" line="44" description="Default"/>
-        <tag name="param" line="44" description="&lt;p&gt;date to validate&lt;/p&gt;" type="string" variable="$date">
-          <type>string</type>
-        </tag>
-        <tag name="return" line="44" description="if valid" type="boolean">
-          <type>boolean</type>
-        </tag>
-        <tag name="see" line="44" description="" link="\APIError::endError()"/>
-        <tag name="see" line="44" description="" link="\APIError::parse"/>
-      </docblock>
-      <argument line="0" by_reference="false">
-        <name>$date</name>
-        <default></default>
-        <type>string</type>
-      </argument>
-    </function>
-    <parse_markers>
-      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-    </parse_markers>
-    <source>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</source>
-  </file>
-  <file path="config.php" generated-path="config.html" hash="ad48b494a4400a0dd260566d0ebc856d" package="Default">
-    <docblock line="0">
-      <description>Basic database configuration constans</description>
+      <description>Lucky Numbers API</description>
       <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
       <tag name="author" line="0" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
     </docblock>
-    <constant namespace="Config\DB" line="28" package="Default">
+    <class final="false" abstract="false" namespace="" line="40" package="Default">
+      <extends>\Module</extends>
+      <name>Lucky</name>
+      <full_name>\Lucky</full_name>
+      <docblock line="40">
+        <description>Lucky numbers module</description>
+        <long-description>Lucky numbers are in Polish _Szczęśliwe Numerki_. Every school day at the
+beginning of day two numbers are ruffled. People with those numbers
+in class register, cannot be asked by teacher during lesson.</long-description>
+        <tag name="author" line="40" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
+        <tag name="package" line="40" description="Default"/>
+        <tag name="inherited_from" description="\Module" refers="\Module" link="/classes/Module.html"/>
+      </docblock>
+      <property static="true" visibility="public" namespace="" line="42" package="Default">
+        <name>$settings</name>
+        <full_name>\Lucky::settings</full_name>
+        <default>array('range' =&gt; false, 'sort' =&gt; 0, 'limit' =&gt; 0)</default>
+        <docblock line="42">
+          <description>Array of settings</description>
+          <long-description>In form `$name =&gt; $value`</long-description>
+          <tag name="inherited_from" description="\Module::settings" refers="\Module::settings" link="/classes/Module.html#property_settings"/>
+        </docblock>
+      </property>
+      <property static="true" visibility="public" namespace="" line="39" package="Default">
+        <name>$settings</name>
+        <full_name>\Module::settings</full_name>
+        <default></default>
+        <docblock line="39">
+          <description>Array of settings</description>
+          <long-description>In form `$name =&gt; $value`</long-description>
+          <tag name="var" line="39" description="" type="array" variable="">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="54" package="Default">
+        <name>__construct</name>
+        <full_name>\Lucky::__construct()</full_name>
+        <docblock line="54">
+          <description>Main Lucky number API engine</description>
+          <long-description></long-description>
+          <tag name="todo" line="54" description="Optimize and split"/>
+          <tag name="global" line="54" description="mysqli $dblink"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="143" package="Default">
+        <name>db_settings</name>
+        <full_name>\Lucky::db_settings()</full_name>
+        <docblock line="143">
+          <description>Database settings handler</description>
+          <long-description>Executed by `db_settings.php` on beginning. Saves values from settings
+table to `$settings`.</long-description>
+          <tag name="param" line="143" description="&lt;p&gt;Name of settings entry&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="143" description="&lt;p&gt;Value of settings entry&lt;/p&gt;" type="string" variable="$value">
+            <type>string</type>
+          </tag>
+          <tag name="inherited_from" description="\Module::db_settings()" refers="\Module::db_settings()" link="/classes/Module.html#method_db_settings"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$value</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="" line="168" package="Default">
+        <name>validate_date</name>
+        <full_name>\Lucky::validate_date()</full_name>
+        <docblock line="168">
+          <description>Validate if given date is in right format to prevent from SQL injection.</description>
+          <long-description>Date should be in format `Y-m-d`. If it's not `endError` is thrown.</long-description>
+          <tag name="param" line="168" description="&lt;p&gt;Date to validate&lt;/p&gt;" type="string" variable="$date">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="168" description="If valid" type="boolean">
+            <type>boolean</type>
+          </tag>
+          <tag name="see" line="168" description="" link="\GeneralError::endError()"/>
+          <tag name="see" line="168" description="" link="\GeneralError::parse"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$date</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="true" static="true" visibility="public" namespace="" line="51" package="Default">
+        <name>db_settings</name>
+        <full_name>\Module::db_settings()</full_name>
+        <docblock line="51">
+          <description>Database settings handler</description>
+          <long-description>Executed by `db_settings.php` on beginning. Saves values from settings
+table to `$settings`.</long-description>
+          <tag name="param" line="51" description="&lt;p&gt;Name of settings entry&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="51" description="&lt;p&gt;Value of settings entry&lt;/p&gt;" type="string" variable="$value">
+            <type>string</type>
+          </tag>
+          <tag name="see" line="51" description="Settings container" link="static::$settings"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$value</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <inherited_from>\Module</inherited_from>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="" line="187" package="Default">
+      <extends>\APIError</extends>
+      <name>LuckyError</name>
+      <full_name>\LuckyError</full_name>
+      <docblock line="187">
+        <description>Error for Lucky module</description>
+        <long-description></long-description>
+        <tag name="see" line="187" description="Lucky module" link="\Lucky"/>
+        <tag name="see" line="187" description="Basic error" link="\APIError"/>
+        <tag name="package" line="187" description="Default"/>
+        <tag name="inherited_from" description="\APIError" refers="\APIError" link="/classes/APIError.html"/>
+      </docblock>
+      <constant namespace="" line="189" package="Default">
+        <name>mid</name>
+        <full_name>\LuckyError::mid</full_name>
+        <value>\ModuleList::lucky</value>
+        <docblock line="189">
+          <description>Module id</description>
+          <long-description></long-description>
+          <tag name="inherited_from" description="\APIError::mid" refers="\APIError::mid" link="/classes/APIError.html#constant_mid"/>
+        </docblock>
+      </constant>
+      <constant namespace="" line="191" package="Default">
+        <name>dateFormat</name>
+        <full_name>\LuckyError::dateFormat</full_name>
+        <value>1</value>
+        <docblock line="191">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="" line="192" package="Default">
+        <name>limit</name>
+        <full_name>\LuckyError::limit</full_name>
+        <value>2</value>
+        <docblock line="192">
+          <description>Date format invalid</description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="" line="40" package="Default">
+        <name>mid</name>
+        <full_name>\APIError::mid</full_name>
+        <value>0</value>
+        <docblock line="40">
+          <description>Module id</description>
+          <long-description></long-description>
+          <tag name="see" line="40" description="" link="\ModuleList"/>
+        </docblock>
+      </constant>
+      <constant namespace="" line="43" package="Default">
+        <name>runtime</name>
+        <full_name>\APIError::runtime</full_name>
+        <value>1</value>
+        <docblock line="43">
+          <description>Runtime error</description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <property static="true" visibility="private" namespace="" line="34" package="Default">
+        <name>$constCacheArray</name>
+        <full_name>\BasicEnum::constCacheArray</full_name>
+        <default>NULL</default>
+        <docblock line="34">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="34" description="&lt;p&gt;Cached array of constants&lt;/p&gt;" type="array|null" variable="">
+            <type>array</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="" line="194" package="Default">
+        <name>getDefaultMessage</name>
+        <full_name>\LuckyError::getDefaultMessage()</full_name>
+        <docblock line="194">
+          <description>Exceeded limit of request length</description>
+          <long-description>In attributes array it's possible to include additional informations
+(it's mandatory for some errors).
+
+It's not directly end-user exposed so there's no need to translate
+these messages.</long-description>
+          <tag name="inherited_from" description="\APIError::getDefaultMessage()" refers="\APIError::getDefaultMessage()" link="/classes/APIError.html#method_getDefaultMessage"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$attribs</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="" line="205" package="Default">
+        <name>validateAttributesArray</name>
+        <full_name>\LuckyError::validateAttributesArray()</full_name>
+        <docblock line="205">
+          <description>Validate attribute array for given error id.</description>
+          <long-description>Some errors have some mandatory attributes, which have to be included.
+If some attribute is not included, then runtime error is thrown.
+Not including attribute is only programmer's fault.</long-description>
+          <tag name="inherited_from" description="\APIError::validateAttributesArray()" refers="\APIError::validateAttributesArray()" link="/classes/APIError.html#method_validateAttributesArray"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$arr</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="" line="58" package="Default">
+        <name>getDefaultMessage</name>
+        <full_name>\APIError::getDefaultMessage()</full_name>
+        <docblock line="58">
+          <description>Generate default message for given error.</description>
+          <long-description>In attributes array it's possible to include additional informations
+(it's mandatory for some errors).
+
+It's not directly end-user exposed so there's no need to translate
+these messages.</long-description>
+          <tag name="param" line="58" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="58" description="&lt;p&gt;Array of attributes&lt;/p&gt;" type="array" variable="$attribs">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="58" description="Default message" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$attribs</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="" line="75" package="Default">
+        <name>validateAttributesArray</name>
+        <full_name>\APIError::validateAttributesArray()</full_name>
+        <docblock line="75">
+          <description>Validate attribute array for given error id.</description>
+          <long-description>Some errors have some mandatory attributes, which have to be included.
+If some attribute is not included, then runtime error is thrown.
+Not including attribute is only programmer's fault.</long-description>
+          <tag name="param" line="75" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="75" description="&lt;p&gt;Array of attributes&lt;/p&gt;" type="array" variable="$arr">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$arr</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="92" package="Default">
+        <name>validateAttributeArray</name>
+        <full_name>\APIError::validateAttributeArray()</full_name>
+        <docblock line="92">
+          <description>Validate attribute if not exists.</description>
+          <long-description>If `$name` exists in `$arr`, throws `errorRuntimeError($id, false, $name)`.</long-description>
+          <tag name="param" line="92" description="&lt;p&gt;Name of attribute&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="92" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="92" description="&lt;p&gt;Array of attributes&lt;/p&gt;" type="array" variable="$arr">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$arr</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="105" package="Default">
+        <name>error</name>
+        <full_name>\APIError::error()</full_name>
+        <docblock line="105">
+          <description>Write XML error.</description>
+          <long-description></long-description>
+          <tag name="param" line="105" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="105" description="&lt;p&gt;Error message (if '' default error message is used as message)&lt;/p&gt;" type="string" variable="$msg">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="105" description="&lt;p&gt;Array of attributes to include to XML tag&lt;/p&gt;" type="array" variable="$attribs">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$msg</name>
+          <default>''</default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$attribs</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="136" package="Default">
+        <name>errorRuntimeError</name>
+        <full_name>\APIError::errorRuntimeError()</full_name>
+        <docblock line="136">
+          <description>Throw runtime error for wrong error attribute.</description>
+          <long-description></long-description>
+          <tag name="param" line="136" description="&lt;p&gt;Errorneus error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="136" description="&lt;p&gt;If should contain or not problem_attrib&lt;/p&gt;" type="boolean" variable="$should_contain">
+            <type>boolean</type>
+          </tag>
+          <tag name="param" line="136" description="&lt;p&gt;Name of problematic argument&lt;/p&gt;" type="string" variable="$problem_attrib">
+            <type>string</type>
+          </tag>
+          <tag name="see" line="136" description="" link="\GeneralError::runtimeError()"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$should_contain</name>
+          <default></default>
+          <type>boolean</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$problem_attrib</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="153" package="Default">
+        <name>runtimeError</name>
+        <full_name>\APIError::runtimeError()</full_name>
+        <docblock line="153">
+          <description>Throw runtime error with given message (including default error message).</description>
+          <long-description></long-description>
+          <tag name="param" line="153" description="&lt;p&gt;Message of error&lt;/p&gt;" type="string" variable="$msg">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="153" description="&lt;p&gt;Array of additional error arguments&lt;/p&gt;" type="array" variable="$args">
+            <type>array</type>
+          </tag>
+          <tag name="see" line="153" description="" link="\GeneralError::endError()"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$msg</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$args</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="166" package="Default">
+        <name>endError</name>
+        <full_name>\APIError::endError()</full_name>
+        <docblock line="166">
+          <description>Write XML error, end document and close().</description>
+          <long-description></long-description>
+          <tag name="param" line="166" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="166" description="&lt;p&gt;Error message&lt;/p&gt;" type="string" variable="$msg">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="166" description="&lt;p&gt;Error attributes array&lt;/p&gt;" type="array" variable="$attrib">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$msg</name>
+          <default>''</default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$attrib</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="40" package="Default">
+        <name>getConstants</name>
+        <full_name>\BasicEnum::getConstants()</full_name>
+        <docblock line="40">
+          <description>Get list of constants</description>
+          <long-description></long-description>
+          <tag name="return" line="40" description="Array of constants" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="59" package="Default">
+        <name>isValidName</name>
+        <full_name>\BasicEnum::isValidName()</full_name>
+        <docblock line="59">
+          <description>Check if given const name is present in class.</description>
+          <long-description></long-description>
+          <tag name="param" line="59" description="&lt;p&gt;Constant name&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="59" description="&lt;p&gt;If name should be checked case sensitive&lt;/p&gt;" type="boolean" variable="$strict">
+            <type>boolean</type>
+          </tag>
+          <tag name="return" line="59" description="If enum name exists" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$strict</name>
+          <default>false</default>
+          <type>boolean</type>
+        </argument>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="76" package="Default">
+        <name>isValidValue</name>
+        <full_name>\BasicEnum::isValidValue()</full_name>
+        <docblock line="76">
+          <description>Check if given value is represented by some constant.</description>
+          <long-description></long-description>
+          <tag name="param" line="76" description="&lt;p&gt;Enum value&lt;/p&gt;" type="integer" variable="$value">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="76" description="If enum value exists" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$value</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="87" package="Default">
+        <name>getName</name>
+        <full_name>\BasicEnum::getName()</full_name>
+        <docblock line="87">
+          <description>Get name of enum from given value.</description>
+          <long-description></long-description>
+          <tag name="param" line="87" description="&lt;p&gt;Enum value&lt;/p&gt;" type="integer" variable="$value">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="87" description="Enum name or NULL if value not present" type="string|null">
+            <type>string</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$value</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="105" package="Default">
+        <name>getValue</name>
+        <full_name>\BasicEnum::getValue()</full_name>
+        <docblock line="105">
+          <description>Get value from given enum name.</description>
+          <long-description></long-description>
+          <tag name="param" line="105" description="&lt;p&gt;Enum name&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="105" description="Enum value or NULL if name not present" type="integer|null">
+            <type>integer</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+    </class>
+    <markers>
+      <todo line="54">Optimize and split</todo>
+    </markers>
+    <parse_markers>
+      <error line="143" code="PPC:ERR-50008">No summary for method db_settings()</error>
+      <error line="42" code="PPC:ERR-50007">No summary for property $settings</error>
+      <error line="194" code="PPC:ERR-50015">Argument $id is missing from the Docblock of getDefaultMessage</error>
+      <error line="194" code="PPC:ERR-50015">Argument $attribs is missing from the Docblock of getDefaultMessage</error>
+      <error line="205" code="PPC:ERR-50015">Argument $id is missing from the Docblock of validateAttributesArray</error>
+      <error line="205" code="PPC:ERR-50015">Argument $arr is missing from the Docblock of validateAttributesArray</error>
+      <error line="205" code="PPC:ERR-50008">No summary for method validateAttributesArray()</error>
+    </parse_markers>
+    <source>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</source>
+  </file>
+  <file path="modules/module.php" generated-path="modules.module.html" hash="6d2a8042c27c1a9ea9a25567f2e0abd5" package="Default">
+    <docblock line="0">
+      <description>Base module class</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
+    </docblock>
+    <class final="false" abstract="true" namespace="" line="31" package="Default">
+      <extends/>
+      <name>Module</name>
+      <full_name>\Module</full_name>
+      <docblock line="31">
+        <description>Abstract module parent class</description>
+        <long-description></long-description>
+        <tag name="package" line="31" description="Default"/>
+      </docblock>
+      <property static="true" visibility="public" namespace="" line="39" package="Default">
+        <name>$settings</name>
+        <full_name>\Module::settings</full_name>
+        <default></default>
+        <docblock line="39">
+          <description>Array of settings</description>
+          <long-description>In form `$name =&gt; $value`</long-description>
+          <tag name="var" line="39" description="" type="array" variable="">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="true" static="true" visibility="public" namespace="" line="51" package="Default">
+        <name>db_settings</name>
+        <full_name>\Module::db_settings()</full_name>
+        <docblock line="51">
+          <description>Database settings handler</description>
+          <long-description>Executed by `db_settings.php` on beginning. Saves values from settings
+table to `$settings`.</long-description>
+          <tag name="param" line="51" description="&lt;p&gt;Name of settings entry&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="51" description="&lt;p&gt;Value of settings entry&lt;/p&gt;" type="string" variable="$value">
+            <type>string</type>
+          </tag>
+          <tag name="see" line="51" description="Settings container" link="static::$settings"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$value</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+    </class>
+    <class final="false" abstract="true" namespace="" line="63" package="Default">
+      <extends>\BasicEnum</extends>
+      <name>ModuleList</name>
+      <full_name>\ModuleList</full_name>
+      <docblock line="63">
+        <description>Enum list of available modules</description>
+        <long-description></long-description>
+        <tag name="todo" line="63" description="Get from DB"/>
+        <tag name="package" line="63" description="Default"/>
+        <tag name="inherited_from" description="\BasicEnum" refers="\BasicEnum" link="/classes/BasicEnum.html"/>
+      </docblock>
+      <constant namespace="" line="65" package="Default">
+        <name>general</name>
+        <full_name>\ModuleList::general</full_name>
+        <value>0</value>
+        <docblock line="65">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="" line="66" package="Default">
+        <name>lucky</name>
+        <full_name>\ModuleList::lucky</full_name>
+        <value>1</value>
+        <docblock line="66">
+          <description>General module</description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <property static="true" visibility="private" namespace="" line="34" package="Default">
+        <name>$constCacheArray</name>
+        <full_name>\BasicEnum::constCacheArray</full_name>
+        <default>NULL</default>
+        <docblock line="34">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="34" description="&lt;p&gt;Cached array of constants&lt;/p&gt;" type="array|null" variable="">
+            <type>array</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="40" package="Default">
+        <name>getConstants</name>
+        <full_name>\BasicEnum::getConstants()</full_name>
+        <docblock line="40">
+          <description>Get list of constants</description>
+          <long-description></long-description>
+          <tag name="return" line="40" description="Array of constants" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="59" package="Default">
+        <name>isValidName</name>
+        <full_name>\BasicEnum::isValidName()</full_name>
+        <docblock line="59">
+          <description>Check if given const name is present in class.</description>
+          <long-description></long-description>
+          <tag name="param" line="59" description="&lt;p&gt;Constant name&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="59" description="&lt;p&gt;If name should be checked case sensitive&lt;/p&gt;" type="boolean" variable="$strict">
+            <type>boolean</type>
+          </tag>
+          <tag name="return" line="59" description="If enum name exists" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$strict</name>
+          <default>false</default>
+          <type>boolean</type>
+        </argument>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="76" package="Default">
+        <name>isValidValue</name>
+        <full_name>\BasicEnum::isValidValue()</full_name>
+        <docblock line="76">
+          <description>Check if given value is represented by some constant.</description>
+          <long-description></long-description>
+          <tag name="param" line="76" description="&lt;p&gt;Enum value&lt;/p&gt;" type="integer" variable="$value">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="76" description="If enum value exists" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$value</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="87" package="Default">
+        <name>getName</name>
+        <full_name>\BasicEnum::getName()</full_name>
+        <docblock line="87">
+          <description>Get name of enum from given value.</description>
+          <long-description></long-description>
+          <tag name="param" line="87" description="&lt;p&gt;Enum value&lt;/p&gt;" type="integer" variable="$value">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="87" description="Enum name or NULL if value not present" type="string|null">
+            <type>string</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$value</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="105" package="Default">
+        <name>getValue</name>
+        <full_name>\BasicEnum::getValue()</full_name>
+        <docblock line="105">
+          <description>Get value from given enum name.</description>
+          <long-description></long-description>
+          <tag name="param" line="105" description="&lt;p&gt;Enum name&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="105" description="Enum value or NULL if name not present" type="integer|null">
+            <type>integer</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+    </class>
+    <markers>
+      <todo line="63">Get from DB</todo>
+    </markers>
+    <source>eJyNVdFu4kYUfecr7kOkTSJk77bqS8imIQnZRSIEAekqTzC2L3iEPeOOx7Bo1ZdqtX/WH+mX9MzYJtm0aWsJY8b3njn33HOH85+LtOiEp6cdOqUrUTLlOqkypjgTZekW3edSVDbVhu6E4Q1N5Kb643dB57kwhTSby3UuZBbEOr9AcNgBnM+61sU+45Wl4z+/fT2hH96+++l7BAS5uHkqSyqMXhuREx5XhplKvbI7BJ/RXlcUC0WGE1laI6PKMklLQiUhOIGvXO0dDtYqlbAhmzJZNnlJeuV/fBg/0AdWbERGkyrKZEwjGbNCuQJbu5Uy5YQij+Mybh2HWcOBbjWAhZVadYkl3hvasinxm35s92gAu6SNAzkW1jE3pAuXdwK6e8qEfUoNXin/qcqEpPLYqS5QUQpI1LiTWUYRU1Xyqsq6DgLB9Gk4/3j/MKf++JE+9afT/nj+2EMwGoe3vOUaSuZFJoGMuoxQdg/6DuFuML3+iJT+1XA0nD+iCLodzseD2Yxu76fUp0l/Oh9eP4z6U5o8TCf3s0FANGNHix3Av0i88l2CjAlbGKVsC39EY0uwyxJKxZbR4JjlFtwExbDOfzfPgYhMq7UvE8FPQoLccEVK2y6VIHmeWlucheFutwvWqgq0WYdZDVKGF0Fr21Pq29ZhccrxRgLb8K+VhPl8HVKh+dK1Jmcom3iL3dUjA4wmdqFVzLRY3AyniwUF9CYMAuwXhcLDlwGG7k2v085dP0LHRWzb2SvgOWUPIxh2RBvgl9r9vnQIl795IHcBDH312pVsLfiX7Yv2e6hcJTktj5TImd5f0NFWZBUv24DLrTDk7LFvVkL/XdTalxaDENNRC9/7RxY3worIHSdtGFqskozNSzaDzxx7q0d7WibRoo13Ei0JAxbxWiqFpYBmcElJnqw7JXT+txqxKYSxGsW1r5bByy0voS9GzU0Z2lurMHa3Z6IRGmD2r2R4BvSLv7+e43xXi3V2dmCDkWkeYq0wDeqgyHciHxreqL2qVOyOEXqm0LFn3m3onDR9+K328UBVOSnmpPFtbZkRjpb/Y1NG9guPesDM5aNiscUce6lrxz79UVidaEyrrdtzc/W6fT0X/mxZYYjwzyNjv8UzU0MhhKyb0X9Pb3veYofDoJkWeq5fnZNV8WaPjHe9xpY08ivYIMLh22Y2OdDsL5fMNcI=</source>
+  </file>
+  <file path="modules/general.php" generated-path="modules.general.html" hash="49b8e059fccef3df164998c1599adfda" package="Default">
+    <docblock line="0">
+      <description>General module</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="" line="35" package="Default">
+      <extends>\Module</extends>
+      <name>General</name>
+      <full_name>\General</full_name>
+      <docblock line="35">
+        <description>General module</description>
+        <long-description>Handles essential request attributes and holds most of global constants.</long-description>
+        <tag name="author" line="35" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
+        <tag name="package" line="35" description="Default"/>
+        <tag name="inherited_from" description="\Module" refers="\Module" link="/classes/Module.html"/>
+      </docblock>
+      <property static="true" visibility="public" namespace="" line="39" package="Default">
+        <name>$settings</name>
+        <full_name>\Module::settings</full_name>
+        <default></default>
+        <docblock line="39">
+          <description>Array of settings</description>
+          <long-description>In form `$name =&gt; $value`</long-description>
+          <tag name="var" line="39" description="" type="array" variable="">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="" line="43" package="Default">
+        <name>__construct</name>
+        <full_name>\General::__construct()</full_name>
+        <docblock line="43">
+          <description>Attribute checks</description>
+          <long-description>Constructor checks for `client` and `version` attributes and sets
+corresponding `$settings`.</long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="65" package="Default">
+        <name>db_settings</name>
+        <full_name>\General::db_settings()</full_name>
+        <docblock line="65">
+          <description>Database settings handler</description>
+          <long-description>Executed by `db_settings.php` on beginning. Saves values from settings
+table to `$settings`.</long-description>
+          <tag name="global" line="65" description="mysqli $dblink"/>
+          <tag name="param" line="65" description="&lt;p&gt;Name of settings entry&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="65" description="&lt;p&gt;Value of settings entry&lt;/p&gt;" type="string" variable="$value">
+            <type>string</type>
+          </tag>
+          <tag name="inherited_from" description="\Module::db_settings()" refers="\Module::db_settings()" link="/classes/Module.html#method_db_settings"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$value</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="true" static="true" visibility="public" namespace="" line="51" package="Default">
+        <name>db_settings</name>
+        <full_name>\Module::db_settings()</full_name>
+        <docblock line="51">
+          <description>Database settings handler</description>
+          <long-description>Executed by `db_settings.php` on beginning. Saves values from settings
+table to `$settings`.</long-description>
+          <tag name="param" line="51" description="&lt;p&gt;Name of settings entry&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="51" description="&lt;p&gt;Value of settings entry&lt;/p&gt;" type="string" variable="$value">
+            <type>string</type>
+          </tag>
+          <tag name="see" line="51" description="Settings container" link="static::$settings"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$value</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <inherited_from>\Module</inherited_from>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="" line="97" package="Default">
+      <extends>\APIError</extends>
+      <name>GeneralError</name>
+      <full_name>\GeneralError</full_name>
+      <docblock line="97">
+        <description>Error for General module</description>
+        <long-description></long-description>
+        <tag name="see" line="97" description="General module" link="\General"/>
+        <tag name="see" line="97" description="Basic error" link="\APIError"/>
+        <tag name="package" line="97" description="Default"/>
+        <tag name="inherited_from" description="\APIError" refers="\APIError" link="/classes/APIError.html"/>
+      </docblock>
+      <constant namespace="" line="99" package="Default">
+        <name>mid</name>
+        <full_name>\GeneralError::mid</full_name>
+        <value>\ModuleList::general</value>
+        <docblock line="99">
+          <description>Module id</description>
+          <long-description></long-description>
+          <tag name="inherited_from" description="\APIError::mid" refers="\APIError::mid" link="/classes/APIError.html#constant_mid"/>
+        </docblock>
+      </constant>
+      <constant namespace="" line="101" package="Default">
+        <name>db</name>
+        <full_name>\GeneralError::db</full_name>
+        <value>1</value>
+        <docblock line="101">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="" line="102" package="Default">
+        <name>noAttr</name>
+        <full_name>\GeneralError::noAttr</full_name>
+        <value>2</value>
+        <docblock line="102">
+          <description>Database error</description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="" line="103" package="Default">
+        <name>attrNotValid</name>
+        <full_name>\GeneralError::attrNotValid</full_name>
+        <value>3</value>
+        <docblock line="103">
+          <description>Attribute not found</description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="" line="104" package="Default">
+        <name>nothing</name>
+        <full_name>\GeneralError::nothing</full_name>
+        <value>4</value>
+        <docblock line="104">
+          <description>Attribute not valid</description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="" line="40" package="Default">
+        <name>mid</name>
+        <full_name>\APIError::mid</full_name>
+        <value>0</value>
+        <docblock line="40">
+          <description>Module id</description>
+          <long-description></long-description>
+          <tag name="see" line="40" description="" link="\ModuleList"/>
+        </docblock>
+      </constant>
+      <constant namespace="" line="43" package="Default">
+        <name>runtime</name>
+        <full_name>\APIError::runtime</full_name>
+        <value>1</value>
+        <docblock line="43">
+          <description>Runtime error</description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <property static="true" visibility="private" namespace="" line="34" package="Default">
+        <name>$constCacheArray</name>
+        <full_name>\BasicEnum::constCacheArray</full_name>
+        <default>NULL</default>
+        <docblock line="34">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="34" description="&lt;p&gt;Cached array of constants&lt;/p&gt;" type="array|null" variable="">
+            <type>array</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="" line="106" package="Default">
+        <name>getDefaultMessage</name>
+        <full_name>\GeneralError::getDefaultMessage()</full_name>
+        <docblock line="106">
+          <description>Nothing to show</description>
+          <long-description>In attributes array it's possible to include additional informations
+(it's mandatory for some errors).
+
+It's not directly end-user exposed so there's no need to translate
+these messages.</long-description>
+          <tag name="inherited_from" description="\APIError::getDefaultMessage()" refers="\APIError::getDefaultMessage()" link="/classes/APIError.html#method_getDefaultMessage"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$attribs</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="" line="123" package="Default">
+        <name>validateAttributesArray</name>
+        <full_name>\GeneralError::validateAttributesArray()</full_name>
+        <docblock line="123">
+          <description>Validate attribute array for given error id.</description>
+          <long-description>Some errors have some mandatory attributes, which have to be included.
+If some attribute is not included, then runtime error is thrown.
+Not including attribute is only programmer's fault.</long-description>
+          <tag name="inherited_from" description="\APIError::validateAttributesArray()" refers="\APIError::validateAttributesArray()" link="/classes/APIError.html#method_validateAttributesArray"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$arr</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="144" package="Default">
+        <name>dbError</name>
+        <full_name>\GeneralError::dbError()</full_name>
+        <docblock line="144">
+          <description>Write XML endError for given mysqli errno and error message.</description>
+          <long-description></long-description>
+          <tag name="see" line="144" description="" link="\GeneralError::endError()"/>
+          <tag name="global" line="144" description="mysqli $dblink"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="" line="58" package="Default">
+        <name>getDefaultMessage</name>
+        <full_name>\APIError::getDefaultMessage()</full_name>
+        <docblock line="58">
+          <description>Generate default message for given error.</description>
+          <long-description>In attributes array it's possible to include additional informations
+(it's mandatory for some errors).
+
+It's not directly end-user exposed so there's no need to translate
+these messages.</long-description>
+          <tag name="param" line="58" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="58" description="&lt;p&gt;Array of attributes&lt;/p&gt;" type="array" variable="$attribs">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="58" description="Default message" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$attribs</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="" line="75" package="Default">
+        <name>validateAttributesArray</name>
+        <full_name>\APIError::validateAttributesArray()</full_name>
+        <docblock line="75">
+          <description>Validate attribute array for given error id.</description>
+          <long-description>Some errors have some mandatory attributes, which have to be included.
+If some attribute is not included, then runtime error is thrown.
+Not including attribute is only programmer's fault.</long-description>
+          <tag name="param" line="75" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="75" description="&lt;p&gt;Array of attributes&lt;/p&gt;" type="array" variable="$arr">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$arr</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="92" package="Default">
+        <name>validateAttributeArray</name>
+        <full_name>\APIError::validateAttributeArray()</full_name>
+        <docblock line="92">
+          <description>Validate attribute if not exists.</description>
+          <long-description>If `$name` exists in `$arr`, throws `errorRuntimeError($id, false, $name)`.</long-description>
+          <tag name="param" line="92" description="&lt;p&gt;Name of attribute&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="92" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="92" description="&lt;p&gt;Array of attributes&lt;/p&gt;" type="array" variable="$arr">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$arr</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="105" package="Default">
+        <name>error</name>
+        <full_name>\APIError::error()</full_name>
+        <docblock line="105">
+          <description>Write XML error.</description>
+          <long-description></long-description>
+          <tag name="param" line="105" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="105" description="&lt;p&gt;Error message (if '' default error message is used as message)&lt;/p&gt;" type="string" variable="$msg">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="105" description="&lt;p&gt;Array of attributes to include to XML tag&lt;/p&gt;" type="array" variable="$attribs">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$msg</name>
+          <default>''</default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$attribs</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="136" package="Default">
+        <name>errorRuntimeError</name>
+        <full_name>\APIError::errorRuntimeError()</full_name>
+        <docblock line="136">
+          <description>Throw runtime error for wrong error attribute.</description>
+          <long-description></long-description>
+          <tag name="param" line="136" description="&lt;p&gt;Errorneus error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="136" description="&lt;p&gt;If should contain or not problem_attrib&lt;/p&gt;" type="boolean" variable="$should_contain">
+            <type>boolean</type>
+          </tag>
+          <tag name="param" line="136" description="&lt;p&gt;Name of problematic argument&lt;/p&gt;" type="string" variable="$problem_attrib">
+            <type>string</type>
+          </tag>
+          <tag name="see" line="136" description="" link="\GeneralError::runtimeError()"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$should_contain</name>
+          <default></default>
+          <type>boolean</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$problem_attrib</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="153" package="Default">
+        <name>runtimeError</name>
+        <full_name>\APIError::runtimeError()</full_name>
+        <docblock line="153">
+          <description>Throw runtime error with given message (including default error message).</description>
+          <long-description></long-description>
+          <tag name="param" line="153" description="&lt;p&gt;Message of error&lt;/p&gt;" type="string" variable="$msg">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="153" description="&lt;p&gt;Array of additional error arguments&lt;/p&gt;" type="array" variable="$args">
+            <type>array</type>
+          </tag>
+          <tag name="see" line="153" description="" link="\GeneralError::endError()"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$msg</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$args</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="166" package="Default">
+        <name>endError</name>
+        <full_name>\APIError::endError()</full_name>
+        <docblock line="166">
+          <description>Write XML error, end document and close().</description>
+          <long-description></long-description>
+          <tag name="param" line="166" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="166" description="&lt;p&gt;Error message&lt;/p&gt;" type="string" variable="$msg">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="166" description="&lt;p&gt;Error attributes array&lt;/p&gt;" type="array" variable="$attrib">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$msg</name>
+          <default>''</default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$attrib</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\APIError</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="40" package="Default">
+        <name>getConstants</name>
+        <full_name>\BasicEnum::getConstants()</full_name>
+        <docblock line="40">
+          <description>Get list of constants</description>
+          <long-description></long-description>
+          <tag name="return" line="40" description="Array of constants" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="59" package="Default">
+        <name>isValidName</name>
+        <full_name>\BasicEnum::isValidName()</full_name>
+        <docblock line="59">
+          <description>Check if given const name is present in class.</description>
+          <long-description></long-description>
+          <tag name="param" line="59" description="&lt;p&gt;Constant name&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="59" description="&lt;p&gt;If name should be checked case sensitive&lt;/p&gt;" type="boolean" variable="$strict">
+            <type>boolean</type>
+          </tag>
+          <tag name="return" line="59" description="If enum name exists" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$strict</name>
+          <default>false</default>
+          <type>boolean</type>
+        </argument>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="76" package="Default">
+        <name>isValidValue</name>
+        <full_name>\BasicEnum::isValidValue()</full_name>
+        <docblock line="76">
+          <description>Check if given value is represented by some constant.</description>
+          <long-description></long-description>
+          <tag name="param" line="76" description="&lt;p&gt;Enum value&lt;/p&gt;" type="integer" variable="$value">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="76" description="If enum value exists" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$value</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="87" package="Default">
+        <name>getName</name>
+        <full_name>\BasicEnum::getName()</full_name>
+        <docblock line="87">
+          <description>Get name of enum from given value.</description>
+          <long-description></long-description>
+          <tag name="param" line="87" description="&lt;p&gt;Enum value&lt;/p&gt;" type="integer" variable="$value">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="87" description="Enum name or NULL if value not present" type="string|null">
+            <type>string</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$value</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="105" package="Default">
+        <name>getValue</name>
+        <full_name>\BasicEnum::getValue()</full_name>
+        <docblock line="105">
+          <description>Get value from given enum name.</description>
+          <long-description></long-description>
+          <tag name="param" line="105" description="&lt;p&gt;Enum name&lt;/p&gt;" type="string" variable="$name">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="105" description="Enum value or NULL if name not present" type="integer|null">
+            <type>integer</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <inherited_from>\BasicEnum</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="65" code="PPC:ERR-50008">No summary for method db_settings()</error>
+      <error line="106" code="PPC:ERR-50015">Argument $id is missing from the Docblock of getDefaultMessage</error>
+      <error line="106" code="PPC:ERR-50015">Argument $attribs is missing from the Docblock of getDefaultMessage</error>
+      <error line="123" code="PPC:ERR-50015">Argument $id is missing from the Docblock of validateAttributesArray</error>
+      <error line="123" code="PPC:ERR-50015">Argument $arr is missing from the Docblock of validateAttributesArray</error>
+      <error line="123" code="PPC:ERR-50008">No summary for method validateAttributesArray()</error>
+    </parse_markers>
+    <source>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</source>
+  </file>
+  <file path="config.php" generated-path="config.html" hash="e36a9797934324edf3c3da9d23b02651" package="Default">
+    <docblock line="0">
+      <description>Basic editable configuration for API engine</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
+    </docblock>
+    <constant namespace="Config\DB" line="41" package="Config\DB">
       <name>host</name>
       <full_name>\Config\DB\host</full_name>
       <value>'localhost'</value>
-      <docblock line="28">
+      <docblock line="41">
         <description>Database hostname</description>
         <long-description></long-description>
-        <tag name="package" line="28" description="Default"/>
+        <tag name="package" line="41" description="Config\DB"/>
       </docblock>
     </constant>
-    <constant namespace="Config\DB" line="30" package="Default">
+    <constant namespace="Config\DB" line="44" package="Config\DB">
       <name>port</name>
       <full_name>\Config\DB\port</full_name>
       <value>'3306'</value>
-      <docblock line="30">
+      <docblock line="44">
         <description>Database connection port</description>
         <long-description></long-description>
-        <tag name="package" line="30" description="Default"/>
+        <tag name="package" line="44" description="Config\DB"/>
       </docblock>
     </constant>
-    <constant namespace="Config\DB" line="32" package="Default">
+    <constant namespace="Config\DB" line="47" package="Config\DB">
       <name>user</name>
       <full_name>\Config\DB\user</full_name>
       <value>'zso10app'</value>
-      <docblock line="32">
+      <docblock line="47">
         <description>Database user name</description>
         <long-description></long-description>
-        <tag name="package" line="32" description="Default"/>
+        <tag name="package" line="47" description="Config\DB"/>
       </docblock>
     </constant>
-    <constant namespace="Config\DB" line="34" package="Default">
+    <constant namespace="Config\DB" line="50" package="Config\DB">
       <name>password</name>
       <full_name>\Config\DB\password</full_name>
       <value>'fsadpass1029'</value>
-      <docblock line="34">
+      <docblock line="50">
         <description>Database password</description>
         <long-description></long-description>
-        <tag name="package" line="34" description="Default"/>
+        <tag name="package" line="50" description="Config\DB"/>
       </docblock>
     </constant>
-    <constant namespace="Config\DB" line="36" package="Default">
+    <constant namespace="Config\DB" line="53" package="Config\DB">
       <name>database</name>
       <full_name>\Config\DB\database</full_name>
       <value>'zso10app'</value>
-      <docblock line="36">
+      <docblock line="53">
         <description>Main ZSO10 App database name</description>
         <long-description></long-description>
-        <tag name="package" line="36" description="Default"/>
+        <tag name="package" line="53" description="Config\DB"/>
       </docblock>
     </constant>
-    <constant namespace="Config\DB" line="42" package="Default">
+    <constant namespace="Config\DB" line="59" package="Config\DB">
       <name>table_prefix</name>
       <full_name>\Config\DB\table_prefix</full_name>
       <value>'app_'</value>
-      <docblock line="42">
+      <docblock line="59">
         <description>Table name prefix.</description>
         <long-description>For example: app_lucky</long-description>
-        <tag name="package" line="42" description="Default"/>
+        <tag name="package" line="59" description="Config\DB"/>
       </docblock>
     </constant>
-    <source>eJyFlNtuGjEQhu95irnLQYhDolZqEqXZHEiREkAcFFFFiszuLGvhtS3bC6FVb6qqb9YX6ZN0ZgOlVQNFgsXMP9/847E5e28zW6nUDytwCFfGLhWmAfZ/fv92AEeN5hu4Fw5n0JOz4sdXQSLWDTPpwTozdSIH+po6RPAmDQsSn8DSFBALDQ4T6YOTkyIgyABCJ3XjIDeJTJfMod8KnaCDkCEEdLkHk5aL284IblGjEwp6xUTJGO5kjNojCCrNv/gME5iUHM5osYfBygO0DIFFkEZXASXFHczReVrD8brGClgF4xiyLwI7d2As5x2Q3SUoETaptS3tb7pMQOqSnRlLHWWEpB4XUimYIBQe00JVGUFieGgPP3RHQ4g6Y3iI+v2oMxyfkjhkhqI4xxeUzK2SRKa+nNBhSfaZcH/Tv/pAKdFl+649HFMT0GoPOzeDAbS6fYigF/WH7avRXdSH3qjf6w5uagADZFvIgB1bnJZTom1MMAip/LrxMQ3WkzuVQCbmSAOOUc7Jm4CYjs7/h8cQoYyelm2SeLORZK6dgjahCp5MnmUh2JN6fbFY1Ka6qBk3rasXiK+fs6E6n9rS1qXwVILGLSaC3MdGp3JauHL8vPJBaM9Cfl+IgjbY/X2u4SwXzko3u5jm1HAtNvl5WUKLHL0VMdLdYOrj9SV8rgC9yg8yANfrupnxgfWcx8EEU6lxf+935iMr9qqwp0wsVLk4OP2XQ441xqV5a1zYjuMo446PG29fJdGBc7DbEkuY8cmbZkNY+yrHCu8XxiU7rKwUjEq9SHjdbBy9+xN3L+hyfBx0mw2IrN3Ma7fBtWyLyfLJd1JM1AplHUGea+vI+tmioeOzoNtEf1EEeVJFPFuuotuqB8Y+vRDZAeetq5en4MsvX6Ckfw==</source>
+    <source>eJydVe9OGkEQ/85TzIcmqCEHaNqkaq0nipKoEDhraG3Mcjd3t+Fud7O7B9KmX5qmb9YX6ZN09gBRq20CCYS9nfn92ZnZ23+vUlWpb21VYAuOmOEhYMQtG2UIoRQxTwrNLJcCYqnB73UARcIFunD3PWSFTWnngmkcQ4+Pi1/fGeznTCuux4dJznjmhTI/oOB6hYhcUkuqWYaxhY3fP39swnaj+foxAAW5uCDlBpSWiWY50N9YI4KRsZ1S8C7MZAEhE6BJsbGajwqLwC0wEdVJUi4jHs8cDj0rRIQabIpgUecGZFwuTi+v4BQFapZBrxhlZP+chygMAiNq98SkGMGoxHEZbadhsNAAbUnA5fnUADnta5igNu68dpYcC8AaSO1ANph1yjVI5fI2Se4MMmZXqd4L9lcuI+CixE6lIkcpQZLHKc8yGCEUBuMiqzkICobrTnDWvQrAvxzCtd/v+5fBcI+CqW60ixOcQ/FcZZyQyZdmws5IvkO4OOm3zijFP+qcd4IhmYB2J7g8GQyg3e2DDz2/H3RaV+d+H3pX/V53cOIBDNDJKrvkH0ccl1WiY4zQUp+YpfEhFdaQuiyClE2QChwin5A2Rj2pZv8vngNhmRRJaZOCVwdJ4joxCGlrYEjkfmqt2q3Xp9Opl4jCkzqpZ3MQUz/w5l0rWI5GsRDhawXoU/7QzJTzEBZao7D3dY/Rhq5lYi1zOD5yAC58IXR395VBa7lIzKfqh3nKDcFUP8M7qDa8hrdd3ZuTfKs8nkvqMzZi5ulc0spYKphZbyRX3lol7A1JfuLyeEmcSmNdfLnjmChvzJKHqQu3EcZ0SWxU7zduXG61BtVMhiwrF5t7fzOQGYFh6UtJbdchcnmOaGen8eZZDhoPDevacMkO/YuRzQZT6lkGxYyZSh2tJX+R60hiwyK3bja23z4kumA0/h8H3WYDfKVWjbGuqSXAC8aWkEH5VnAkNEwEcuctd9rUbnjH6Aaha5mSb7MiHM9elrLYeUlP+fq5nXM4TQ5xqWc+Gn8A+FkUdA==</source>
   </file>
-  <file path="lib/var.php" generated-path="lib.var.html" hash="d8fdbf6ba080b615ae7239425e854863" package="Default">
+  <file path="lib/attribs.php" generated-path="lib.attribs.html" hash="0daace512a2617497bb60702ecd416b3" package="Default">
     <docblock line="0">
-      <description></description>
+      <description>Attribute checking</description>
       <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
-      <tag name="var" line="0" description="&lt;p&gt;mysqli MySQLi DB handler&lt;/p&gt;" type="" variable="$dblink"/>
+      <tag name="author" line="0" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
     </docblock>
-    <constant namespace="" line="41" package="Default">
-      <name>VERSION_APP_ANDROID</name>
-      <full_name>\VERSION_APP_ANDROID</full_name>
-      <value>$row['value']</value>
-      <docblock line="41">
-        <description></description>
-        <long-description></long-description>
-        <tag name="package" line="41" description="Default"/>
-      </docblock>
-    </constant>
-    <constant namespace="" line="43" package="Default">
-      <name>VERSION_API</name>
-      <full_name>\VERSION_API</full_name>
-      <value>$row['value']</value>
-      <docblock line="43">
-        <description></description>
-        <long-description></long-description>
-        <tag name="package" line="43" description="Default"/>
-      </docblock>
-    </constant>
-    <constant namespace="" line="265" package="Default">
-      <name>XML_HEADER</name>
-      <full_name>\XML_HEADER</full_name>
-      <value>'&lt;?xml version="1.0" encoding="UTF-8"?&gt;'</value>
-      <docblock line="265">
-        <description>XML header tag.</description>
-        <long-description></long-description>
-        <tag name="package" line="265" description="Default"/>
-      </docblock>
-    </constant>
-    <constant namespace="" line="267" package="Default">
-      <name>XML_API_OPEN</name>
-      <full_name>\XML_API_OPEN</full_name>
-      <value>'&lt;api version="' . VERSION_API . '"&gt;'</value>
-      <docblock line="267">
-        <description>XML API opening tag</description>
-        <long-description></long-description>
-        <tag name="package" line="267" description="Default"/>
-      </docblock>
-    </constant>
-    <constant namespace="" line="269" package="Default">
-      <name>XML_API_CLOSE</name>
-      <full_name>\XML_API_CLOSE</full_name>
-      <value>'&lt;/api&gt;'</value>
-      <docblock line="269">
-        <description>XML API closing tag</description>
-        <long-description></long-description>
-        <tag name="package" line="269" description="Default"/>
-      </docblock>
-    </constant>
-    <function namespace="" line="234" package="Default">
+    <function namespace="" line="37" package="Attributes">
       <name>checkAttrib</name>
       <full_name>\checkAttrib()</full_name>
-      <docblock line="234">
+      <docblock line="37">
         <description>Check if GET attribute exists and execute error if necessary.</description>
         <long-description></long-description>
-        <tag name="package" line="234" description="Default"/>
-        <tag name="param" line="234" description="&lt;p&gt;attribute name&lt;/p&gt;" type="string" variable="$name">
+        <tag name="package" line="37" description="Attributes"/>
+        <tag name="package" line="37" description="Attributes"/>
+        <tag name="param" line="37" description="&lt;p&gt;Attribute name&lt;/p&gt;" type="string" variable="$name">
           <type>string</type>
         </tag>
-        <tag name="param" line="234" description="&lt;p&gt;if has to exec error if not found&lt;/p&gt;" type="boolean" variable="$exec_error">
+        <tag name="param" line="37" description="&lt;p&gt;If has to exec error if not found&lt;/p&gt;" type="boolean" variable="$exec_error">
           <type>boolean</type>
         </tag>
-        <tag name="return" line="234" description="attribute exists" type="boolean">
+        <tag name="return" line="37" description="Attribute exists" type="boolean">
           <type>boolean</type>
         </tag>
       </docblock>
@@ -188,20 +1458,21 @@
         <type>boolean</type>
       </argument>
     </function>
-    <function namespace="" line="252" package="Default">
+    <function namespace="" line="57" package="Attributes">
       <name>errorAttribNotValid</name>
       <full_name>\errorAttribNotValid()</full_name>
-      <docblock line="252">
-        <description>Throw attribute not valid error.</description>
+      <docblock line="57">
+        <description>Throw "attribute not valid" error.</description>
         <long-description></long-description>
-        <tag name="package" line="252" description="Default"/>
-        <tag name="param" line="252" description="&lt;p&gt;attribute name&lt;/p&gt;" type="string" variable="$attrib">
+        <tag name="package" line="57" description="Attributes"/>
+        <tag name="package" line="57" description="Attributes"/>
+        <tag name="param" line="57" description="&lt;p&gt;Attribute name&lt;/p&gt;" type="string" variable="$attrib">
           <type>string</type>
         </tag>
-        <tag name="param" line="252" description="&lt;p&gt;the best valid value of attrib (not mandatory)&lt;/p&gt;" type="string" variable="$valid">
+        <tag name="param" line="57" description="&lt;p&gt;The best valid value of attrib (not mandatory)&lt;/p&gt;" type="string" variable="$valid">
           <type>string</type>
         </tag>
-        <tag name="param" line="252" description="&lt;p&gt;additional error message (not mandatory)&lt;/p&gt;" type="string" variable="$msg">
+        <tag name="param" line="57" description="&lt;p&gt;Additional error message (not mandatory)&lt;/p&gt;" type="string" variable="$msg">
           <type>string</type>
         </tag>
       </docblock>
@@ -221,106 +1492,87 @@
         <type>string</type>
       </argument>
     </function>
-    <function namespace="" line="272" package="Default">
+    <source>eJyNVNtu4zYQffdXTBcBLAeC3Qv6EifpqoGTNZB1DFvuIiiKgJZGFmFJVEnKXqPIS1H0z/oj/ZLOUJKtbDftCrAhkTOHZ+ac4eUPZVr2RufnPTiHwFot15VFiFKMtrLY8Cr/3orKpkrDe6FxC3O5rf76XcBlLnQp9fbtJhcyG0Yqv6bgUY/wXNaNKg8ZJha8v//8YwDffv3N9y8RKIjjwlQaKLXaaJEDvSYaEYxK7J6CL+CgKohEARpjaVqG0oIo4hFxylUskwPj0FpVxKjBpggWdW5AJe7jbraCOyxQiwzm1TqTEdzLCAuDIOhoXjEpxrB2OJxxyxyWDQe4VQQsrFSFDyhpX8MOtaFv+K49owH0QWkG8YRl5hpUyXkDonuATNhT6vCV8k9VxiALh52qkipKCZJq3MssgzVCZTCpMp8hKBg+TMN3D6sQgtkjfAgWi2AWPo4pmISjXdxhDSXzMpOETHVpUdgD0WeE95PFzTtKCX6c3k/DRyoCbqfhbLJcwu3DAgKYB4twerO6DxYwXy3mD8vJEGCJTAsZ4D9anDiVqI0xWjKKaQt/JGENsctiSMUOSeAI5Y64CYjIOv8vHoOITBUbVyYFnxpJ5KYJFMr6YIjkZWpteTEa7ff74aaohkpvRlkNYkbXw9a25zDRWmkDLLrGXytJpnP88SNGT8ibHNpsPakiQui75SENUn/ca2fphicIZAJ3kxDEcbDwI4lr2LoO0S05UIosqHxjhD4Mj2NXCvYE24FqPCtEjp0h5c9O1FqpDGlMzjpUqQUpGdwqd1rnKGWpKvK0y9doK10cAYJP2HbYRFux6VAwrm9JVURs8frWqDc9R9Z/QeYKrK5wAL/1gB5i4SUyo3l4kkVZWW86m6/CJ2qXX1c6aCP5aSgywNgtPgNmZK1TBON1Tusm89MYyMl7ceFCvJdrhWLqPvT7PvBsHLz+Ubc+XF23rMZH3OdP6SWCODX8es9HL4SpVnt4c3IBt38nMhm/qSV5TfA643XJ2ziHRccgXQumgeb/CnmGGhSPT80F32NKHwafgcnNBoI4liwmzVqtWs6eJNE/k/5FpnAo9eZM2Z+YmtcU5rfMr1zT3fn82mp3duyY+bmjxS8U1GyNj1ZqkL7q5v8Lw8XU+e61lerLDMJIbQk1W78LT8Z47v0DwihbVA==</source>
+  </file>
+  <file path="lib/error.php" generated-path="lib.error.html" hash="e22601aa2748a0cdfcb3ecd9d212e1df" package="Default">
+    <docblock line="0">
+      <description>API error handler</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
+    </docblock>
+    <function namespace="" line="179" package="Variables">
       <name>close</name>
       <full_name>\close()</full_name>
-      <docblock line="272">
+      <docblock line="179">
         <description>End XML document and exit.</description>
         <long-description></long-description>
-        <tag name="package" line="272" description="Default"/>
+        <tag name="package" line="179" description="Variables"/>
+        <tag name="package" line="179" description="Variables"/>
+        <tag name="global" line="179" description="mysqli $dblink"/>
       </docblock>
     </function>
-    <class final="false" abstract="true" namespace="" line="61" package="Default">
+    <class final="false" abstract="true" namespace="" line="36" package="Default">
       <extends>\BasicEnum</extends>
       <name>APIError</name>
       <full_name>\APIError</full_name>
-      <docblock line="61">
-        <description>Enum static class for handling error reporting.</description>
+      <docblock line="36">
+        <description>Enum static class for handling error reporting</description>
         <long-description></long-description>
-        <tag name="author" line="61" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
-        <tag name="package" line="61" description="Default"/>
+        <tag name="todo" line="36" description="Per module errors"/>
+        <tag name="author" line="36" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
+        <tag name="package" line="36" description="Default"/>
         <tag name="inherited_from" description="\BasicEnum" refers="\BasicEnum" link="/classes/BasicEnum.html"/>
       </docblock>
-      <constant namespace="" line="63" package="Default">
+      <constant namespace="" line="40" package="Default">
+        <name>mid</name>
+        <full_name>\APIError::mid</full_name>
+        <value>0</value>
+        <docblock line="40">
+          <description>Module id</description>
+          <long-description></long-description>
+          <tag name="see" line="40" description="" link="\ModuleList"/>
+        </docblock>
+      </constant>
+      <constant namespace="" line="43" package="Default">
         <name>runtime</name>
         <full_name>\APIError::runtime</full_name>
         <value>1</value>
-        <docblock line="63">
+        <docblock line="43">
           <description>Runtime error</description>
           <long-description></long-description>
         </docblock>
       </constant>
-      <constant namespace="" line="65" package="Default">
-        <name>db</name>
-        <full_name>\APIError::db</full_name>
-        <value>2</value>
-        <docblock line="65">
-          <description>Database error</description>
-          <long-description></long-description>
-        </docblock>
-      </constant>
-      <constant namespace="" line="67" package="Default">
-        <name>parse</name>
-        <full_name>\APIError::parse</full_name>
-        <value>3</value>
-        <docblock line="67">
-          <description>Parse error</description>
-          <long-description></long-description>
-        </docblock>
-      </constant>
-      <constant namespace="" line="69" package="Default">
-        <name>noAttr</name>
-        <full_name>\APIError::noAttr</full_name>
-        <value>4</value>
-        <docblock line="69">
-          <description>Attribute not found</description>
-          <long-description></long-description>
-        </docblock>
-      </constant>
-      <constant namespace="" line="71" package="Default">
-        <name>attrNotValid</name>
-        <full_name>\APIError::attrNotValid</full_name>
-        <value>5</value>
-        <docblock line="71">
-          <description>Attribute not valid</description>
-          <long-description></long-description>
-        </docblock>
-      </constant>
-      <constant namespace="" line="73" package="Default">
-        <name>nothing</name>
-        <full_name>\APIError::nothing</full_name>
-        <value>6</value>
-        <docblock line="73">
-          <description>Nothing to show</description>
-          <long-description></long-description>
-        </docblock>
-      </constant>
-      <property static="true" visibility="private" namespace="" line="30" package="Default">
+      <property static="true" visibility="private" namespace="" line="34" package="Default">
         <name>$constCacheArray</name>
         <full_name>\BasicEnum::constCacheArray</full_name>
         <default>NULL</default>
-        <docblock line="30">
-          <description>Cached array of constants</description>
+        <docblock line="34">
+          <description></description>
           <long-description></long-description>
+          <tag name="var" line="34" description="&lt;p&gt;Cached array of constants&lt;/p&gt;" type="array|null" variable="">
+            <type>array</type>
+            <type>null</type>
+          </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="88" package="Default">
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="" line="58" package="Default">
         <name>getDefaultMessage</name>
         <full_name>\APIError::getDefaultMessage()</full_name>
-        <docblock line="88">
-          <description>Generates default message for given error.</description>
+        <docblock line="58">
+          <description>Generate default message for given error.</description>
           <long-description>In attributes array it's possible to include additional informations
 (it's mandatory for some errors).
 
 It's not directly end-user exposed so there's no need to translate
 these messages.</long-description>
-          <tag name="param" line="88" description="&lt;p&gt;error id&lt;/p&gt;" type="integer" variable="$id">
+          <tag name="param" line="58" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
             <type>integer</type>
           </tag>
-          <tag name="param" line="88" description="&lt;p&gt;array of attributes&lt;/p&gt;" type="array" variable="$attribs">
+          <tag name="param" line="58" description="&lt;p&gt;Array of attributes&lt;/p&gt;" type="array" variable="$attribs">
             <type>array</type>
           </tag>
-          <tag name="return" line="88" description="default message" type="string">
+          <tag name="return" line="58" description="Default message" type="string">
             <type>string</type>
           </tag>
         </docblock>
@@ -335,18 +1587,18 @@ these messages.</long-description>
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="117" package="Default">
+      <method final="false" abstract="false" static="true" visibility="protected" namespace="" line="75" package="Default">
         <name>validateAttributesArray</name>
         <full_name>\APIError::validateAttributesArray()</full_name>
-        <docblock line="117">
-          <description>Validates attribute array for given error id.</description>
+        <docblock line="75">
+          <description>Validate attribute array for given error id.</description>
           <long-description>Some errors have some mandatory attributes, which have to be included.
 If some attribute is not included, then runtime error is thrown.
 Not including attribute is only programmer's fault.</long-description>
-          <tag name="param" line="117" description="&lt;p&gt;error id&lt;/p&gt;" type="integer" variable="$id">
+          <tag name="param" line="75" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
             <type>integer</type>
           </tag>
-          <tag name="param" line="117" description="&lt;p&gt;array of attributes&lt;/p&gt;" type="array" variable="$arr">
+          <tag name="param" line="75" description="&lt;p&gt;Array of attributes&lt;/p&gt;" type="array" variable="$arr">
             <type>array</type>
           </tag>
         </docblock>
@@ -361,19 +1613,51 @@ Not including attribute is only programmer's fault.</long-description>
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="146" package="Default">
-        <name>error</name>
-        <full_name>\APIError::error()</full_name>
-        <docblock line="146">
-          <description>Write XML error.</description>
-          <long-description></long-description>
-          <tag name="param" line="146" description="&lt;p&gt;error id&lt;/p&gt;" type="integer" variable="$id">
-            <type>integer</type>
-          </tag>
-          <tag name="param" line="146" description="&lt;p&gt;error message (if '' default error message is used&#10;as message&lt;/p&gt;" type="string" variable="$msg">
+      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="92" package="Default">
+        <name>validateAttributeArray</name>
+        <full_name>\APIError::validateAttributeArray()</full_name>
+        <docblock line="92">
+          <description>Validate attribute if not exists.</description>
+          <long-description>If `$name` exists in `$arr`, throws `errorRuntimeError($id, false, $name)`.</long-description>
+          <tag name="param" line="92" description="&lt;p&gt;Name of attribute&lt;/p&gt;" type="string" variable="$name">
             <type>string</type>
           </tag>
-          <tag name="param" line="146" description="&lt;p&gt;array of attributes to include to XML tag&lt;/p&gt;" type="array" variable="$attribs">
+          <tag name="param" line="92" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="92" description="&lt;p&gt;Array of attributes&lt;/p&gt;" type="array" variable="$arr">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$id</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$arr</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="105" package="Default">
+        <name>error</name>
+        <full_name>\APIError::error()</full_name>
+        <docblock line="105">
+          <description>Write XML error.</description>
+          <long-description></long-description>
+          <tag name="param" line="105" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="105" description="&lt;p&gt;Error message (if '' default error message is used as message)&lt;/p&gt;" type="string" variable="$msg">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="105" description="&lt;p&gt;Array of attributes to include to XML tag&lt;/p&gt;" type="array" variable="$attribs">
             <type>array</type>
           </tag>
         </docblock>
@@ -393,22 +1677,22 @@ Not including attribute is only programmer's fault.</long-description>
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="172" package="Default">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="136" package="Default">
         <name>errorRuntimeError</name>
         <full_name>\APIError::errorRuntimeError()</full_name>
-        <docblock line="172">
-          <description>Throws runtime error for wrong error attribute.</description>
+        <docblock line="136">
+          <description>Throw runtime error for wrong error attribute.</description>
           <long-description></long-description>
-          <tag name="param" line="172" description="&lt;p&gt;errorneus error id&lt;/p&gt;" type="integer" variable="$id">
+          <tag name="param" line="136" description="&lt;p&gt;Errorneus error id&lt;/p&gt;" type="integer" variable="$id">
             <type>integer</type>
           </tag>
-          <tag name="param" line="172" description="&lt;p&gt;if should contain or not problem_attrib&lt;/p&gt;" type="boolean" variable="$should_contain">
+          <tag name="param" line="136" description="&lt;p&gt;If should contain or not problem_attrib&lt;/p&gt;" type="boolean" variable="$should_contain">
             <type>boolean</type>
           </tag>
-          <tag name="param" line="172" description="&lt;p&gt;name of problematic argument&lt;/p&gt;" type="\stirng" variable="$problem_attrib">
-            <type>\stirng</type>
+          <tag name="param" line="136" description="&lt;p&gt;Name of problematic argument&lt;/p&gt;" type="string" variable="$problem_attrib">
+            <type>string</type>
           </tag>
-          <tag name="see" line="172" description="" link="\APIError::runtimeError()"/>
+          <tag name="see" line="136" description="" link="\GeneralError::runtimeError()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$id</name>
@@ -423,22 +1707,22 @@ Not including attribute is only programmer's fault.</long-description>
         <argument line="0" by_reference="false">
           <name>$problem_attrib</name>
           <default></default>
-          <type>\stirng</type>
+          <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="190" package="Default">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="153" package="Default">
         <name>runtimeError</name>
         <full_name>\APIError::runtimeError()</full_name>
-        <docblock line="190">
-          <description>Throws runtime error with given message (including default error message)</description>
+        <docblock line="153">
+          <description>Throw runtime error with given message (including default error message).</description>
           <long-description></long-description>
-          <tag name="param" line="190" description="&lt;p&gt;message of error&lt;/p&gt;" type="string" variable="$msg">
+          <tag name="param" line="153" description="&lt;p&gt;Message of error&lt;/p&gt;" type="string" variable="$msg">
             <type>string</type>
           </tag>
-          <tag name="param" line="190" description="&lt;p&gt;array of additional error arguments&lt;/p&gt;" type="array" variable="$args">
+          <tag name="param" line="153" description="&lt;p&gt;Array of additional error arguments&lt;/p&gt;" type="array" variable="$args">
             <type>array</type>
           </tag>
-          <tag name="see" line="190" description="" link="\APIError::endError()"/>
+          <tag name="see" line="153" description="" link="\GeneralError::endError()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$msg</name>
@@ -451,44 +1735,19 @@ Not including attribute is only programmer's fault.</long-description>
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="204" package="Default">
-        <name>dbError</name>
-        <full_name>\APIError::dbError()</full_name>
-        <docblock line="204">
-          <description>Write XML endError for given mysqli errno and error message.</description>
-          <long-description></long-description>
-          <tag name="param" line="204" description="&lt;p&gt;mysqli's error number&lt;/p&gt;" type="integer" variable="$errno">
-            <type>integer</type>
-          </tag>
-          <tag name="param" line="204" description="&lt;p&gt;mysqli's error message&lt;/p&gt;" type="string" variable="$error">
-            <type>string</type>
-          </tag>
-          <tag name="see" line="204" description="" link="\APIError::endError()"/>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$errno</name>
-          <default></default>
-          <type>integer</type>
-        </argument>
-        <argument line="0" by_reference="false">
-          <name>$error</name>
-          <default></default>
-          <type>string</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="215" package="Default">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="166" package="Default">
         <name>endError</name>
         <full_name>\APIError::endError()</full_name>
-        <docblock line="215">
-          <description>Write XML error, end document and close()</description>
+        <docblock line="166">
+          <description>Write XML error, end document and close().</description>
           <long-description></long-description>
-          <tag name="param" line="215" description="&lt;p&gt;error id&lt;/p&gt;" type="integer" variable="$id">
+          <tag name="param" line="166" description="&lt;p&gt;Error id&lt;/p&gt;" type="integer" variable="$id">
             <type>integer</type>
           </tag>
-          <tag name="param" line="215" description="&lt;p&gt;error message&lt;/p&gt;" type="string" variable="$msg">
+          <tag name="param" line="166" description="&lt;p&gt;Error message&lt;/p&gt;" type="string" variable="$msg">
             <type>string</type>
           </tag>
-          <tag name="param" line="215" description="&lt;p&gt;error attributes array&lt;/p&gt;" type="array" variable="$attrib">
+          <tag name="param" line="166" description="&lt;p&gt;Error attributes array&lt;/p&gt;" type="array" variable="$attrib">
             <type>array</type>
           </tag>
         </docblock>
@@ -508,31 +1767,31 @@ Not including attribute is only programmer's fault.</long-description>
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="36" package="Default">
+      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="40" package="Default">
         <name>getConstants</name>
         <full_name>\BasicEnum::getConstants()</full_name>
-        <docblock line="36">
-          <description>Gets list of constants</description>
+        <docblock line="40">
+          <description>Get list of constants</description>
           <long-description></long-description>
-          <tag name="return" line="36" description="array of constants" type="array">
+          <tag name="return" line="40" description="Array of constants" type="array">
             <type>array</type>
           </tag>
         </docblock>
         <inherited_from>\BasicEnum</inherited_from>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="55" package="Default">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="59" package="Default">
         <name>isValidName</name>
         <full_name>\BasicEnum::isValidName()</full_name>
-        <docblock line="55">
-          <description>Checks if given const name is present in class.</description>
+        <docblock line="59">
+          <description>Check if given const name is present in class.</description>
           <long-description></long-description>
-          <tag name="param" line="55" description="&lt;p&gt;constant name&lt;/p&gt;" type="string" variable="$name">
+          <tag name="param" line="59" description="&lt;p&gt;Constant name&lt;/p&gt;" type="string" variable="$name">
             <type>string</type>
           </tag>
-          <tag name="param" line="55" description="&lt;p&gt;if name should be checked case sensitive&lt;/p&gt;" type="boolean" variable="$strict">
+          <tag name="param" line="59" description="&lt;p&gt;If name should be checked case sensitive&lt;/p&gt;" type="boolean" variable="$strict">
             <type>boolean</type>
           </tag>
-          <tag name="return" line="55" description="if enum name exists" type="boolean">
+          <tag name="return" line="59" description="If enum name exists" type="boolean">
             <type>boolean</type>
           </tag>
         </docblock>
@@ -548,16 +1807,16 @@ Not including attribute is only programmer's fault.</long-description>
         </argument>
         <inherited_from>\BasicEnum</inherited_from>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="72" package="Default">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="76" package="Default">
         <name>isValidValue</name>
         <full_name>\BasicEnum::isValidValue()</full_name>
-        <docblock line="72">
-          <description>Checks if given value is represented by some constant</description>
+        <docblock line="76">
+          <description>Check if given value is represented by some constant.</description>
           <long-description></long-description>
-          <tag name="param" line="72" description="&lt;p&gt;enum value&lt;/p&gt;" type="integer" variable="$value">
+          <tag name="param" line="76" description="&lt;p&gt;Enum value&lt;/p&gt;" type="integer" variable="$value">
             <type>integer</type>
           </tag>
-          <tag name="return" line="72" description="if enum value exists" type="boolean">
+          <tag name="return" line="76" description="If enum value exists" type="boolean">
             <type>boolean</type>
           </tag>
         </docblock>
@@ -568,16 +1827,16 @@ Not including attribute is only programmer's fault.</long-description>
         </argument>
         <inherited_from>\BasicEnum</inherited_from>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="83" package="Default">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="87" package="Default">
         <name>getName</name>
         <full_name>\BasicEnum::getName()</full_name>
-        <docblock line="83">
-          <description>Gets name of enum from given value</description>
+        <docblock line="87">
+          <description>Get name of enum from given value.</description>
           <long-description></long-description>
-          <tag name="param" line="83" description="&lt;p&gt;enum value&lt;/p&gt;" type="integer" variable="$value">
+          <tag name="param" line="87" description="&lt;p&gt;Enum value&lt;/p&gt;" type="integer" variable="$value">
             <type>integer</type>
           </tag>
-          <tag name="return" line="83" description="enum name or NULL if value not present" type="string|null">
+          <tag name="return" line="87" description="Enum name or NULL if value not present" type="string|null">
             <type>string</type>
             <type>null</type>
           </tag>
@@ -589,16 +1848,16 @@ Not including attribute is only programmer's fault.</long-description>
         </argument>
         <inherited_from>\BasicEnum</inherited_from>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="101" package="Default">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="105" package="Default">
         <name>getValue</name>
         <full_name>\BasicEnum::getValue()</full_name>
-        <docblock line="101">
-          <description>Get value from given enum name</description>
+        <docblock line="105">
+          <description>Get value from given enum name.</description>
           <long-description></long-description>
-          <tag name="param" line="101" description="&lt;p&gt;enum name&lt;/p&gt;" type="string" variable="$name">
+          <tag name="param" line="105" description="&lt;p&gt;Enum name&lt;/p&gt;" type="string" variable="$name">
             <type>string</type>
           </tag>
-          <tag name="return" line="101" description="enum value or NULL if name not present" type="integer|null">
+          <tag name="return" line="105" description="Enum value or NULL if name not present" type="integer|null">
             <type>integer</type>
             <type>null</type>
           </tag>
@@ -611,60 +1870,75 @@ Not including attribute is only programmer's fault.</long-description>
         <inherited_from>\BasicEnum</inherited_from>
       </method>
     </class>
-    <parse_markers>
-      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-    </parse_markers>
-    <source>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</source>
+    <markers>
+      <todo line="36">Per module errors</todo>
+    </markers>
+    <source>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</source>
   </file>
-  <file path="lib/enum.php" generated-path="lib.enum.html" hash="71013b41831f40a44bfe5a14da7d5ff8" package="Default">
+  <file path="lib/db_settings.php" generated-path="lib.db_settings.html" hash="29dd8da1461b4c97c0748061d1011b33" package="Default">
     <docblock line="0">
-      <description></description>
+      <description>Database based settings</description>
       <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
+      <tag name="todo" line="0" description="Check if all constants were created"/>
+      <tag name="author" line="0" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
     </docblock>
-    <class final="false" abstract="true" namespace="" line="28" package="Default">
+    <source>eJydVdtu6kYUfc9X7IcjAREHelFfIKQhhCQccashOoqaCg32Nh5hzzgzYyiqzktV9c/6I/2S7hnbXNJDKhUJ8Mxes/bal9m++jGN0ovm5eUFXMIdM2zJNIL9CUCjMVystDXZ742RgYRehP4aeAgsjsGXQhsmjIYtKgRfITMYODDLTCQVjJjCNUz5OvvrdwZXCVMpV+ubVcJ43PBlck3g5gUpcC56Mt3FGBqo/v3nHzX47ptvfzhlIJDFzSOuIVVypVgC9BgqRNAyNFsCt2AnM/CZAIUB10bxZWYQuAEmgiZpSmTAw53lob1MBKjARAgGVaJBhm7xMH6CBxSoWAzTbBlzH4bcR0HZYeTa7uiIkrR0PPbEvdUwKzTAvSRiZrgUdUBOdgUbVJrW8H3poyCsg1SWpMqMVa5ApvZcjeTuIKaE7o82zoR/iDIALhx3JFOKKCJKinHLqVZLhExjmMV1S0Fg+DyYP06e5tAdP8Pnrud1x/PnNoGpcGTFDeZUPEljTswUl6Ja70i+ZRj1vd4jHeneDoaD+TMFAfeD+bg/m8H9xIMuTLvefNB7GnY9mD5508ms3wCYoZWFluCdFIeuSpTGAA01ii4Df6bCalIXBxCxDVKBfeQb0saoFdPdfxfPkrBYipULk8CHRJK4QQhCmjp1PsJVZEzaaja3221jJbKGVKtmnJPo5nWjbNtL6CsllQZbdIWvGaemc/rvbgFzU0R9F9NNskcKyEIKH6HiAA26gpV2TnazYQo+BCRZrCHZ6deYw2g3+2nILZ8jonYgnhLTAYHbAll96UkR8tXL3e1LJDUFcrRBtVcnGynTeitVQO3wtc8RMijmwulxqUyt7UQ/Oll2GAj0bevmgVuZNCeqhdSP1wVgQVYha/Cbc1zUyWWx1QqW7qFKzF+OM0ICYlyUEwlm1O6UzxmtV1xocGYQLEGXmzfozrHu3JYqDPmv0IBKiaq0/+WO5kQW497bqFh+1VmJfddXATot9muGaneYvfnSEudPHajM+sN+bw4VonjjjTgb+fPC6qkfY/bhW9D71g2LM+rGshFo696bjM7BT4CD8bjvwafJYHxG3wl6Mj6rIT/SORMkD06TplBnsSn6flGsvPyPhsAhiYWpA/sudLZqnt2anVpnO7B8Lz6gOXrThUomUF6Jw3vRgkrFDnJ362bENuLULdUPSm6tilzPx+sQjR8t6ApKv1or74KmoeRHOfjnylFhK7+UEPvxbZ9UVrnsSqsMwGrf57TgyA/XIV+5OhNXG5b0pl633zDGmb/eEd/Q/v8Ptj1dgCGjKFvHbr7Qhf4H9zCz2Q==</source>
+  </file>
+  <file path="lib/enum.php" generated-path="lib.enum.html" hash="2b51c6180f6355a2aea5820bf8ac1a65" package="Default">
+    <docblock line="0">
+      <description>Basic enum support</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
+    </docblock>
+    <class final="false" abstract="true" namespace="" line="31" package="Default">
       <extends/>
       <name>BasicEnum</name>
       <full_name>\BasicEnum</full_name>
-      <docblock line="28">
+      <docblock line="31">
         <description>Enumerator base class</description>
         <long-description></long-description>
-        <tag name="author" line="28" description="Brian Cline and Marek Pikuła&#10;(Basing on http://stackoverflow.com/a/254543)"/>
-        <tag name="package" line="28" description="Default"/>
+        <tag name="author" line="31" description="Brian Cline and Marek Pikuła&#10;(Basing on http://stackoverflow.com/a/254543)"/>
+        <tag name="package" line="31" description="Default"/>
       </docblock>
-      <property static="true" visibility="private" namespace="" line="30" package="Default">
+      <property static="true" visibility="private" namespace="" line="34" package="Default">
         <name>$constCacheArray</name>
         <full_name>\BasicEnum::constCacheArray</full_name>
         <default>NULL</default>
-        <docblock line="30">
-          <description>Cached array of constants</description>
+        <docblock line="34">
+          <description></description>
           <long-description></long-description>
+          <tag name="var" line="34" description="&lt;p&gt;Cached array of constants&lt;/p&gt;" type="array|null" variable="">
+            <type>array</type>
+            <type>null</type>
+          </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="36" package="Default">
+      <method final="false" abstract="false" static="true" visibility="private" namespace="" line="40" package="Default">
         <name>getConstants</name>
         <full_name>\BasicEnum::getConstants()</full_name>
-        <docblock line="36">
-          <description>Gets list of constants</description>
+        <docblock line="40">
+          <description>Get list of constants</description>
           <long-description></long-description>
-          <tag name="return" line="36" description="array of constants" type="array">
+          <tag name="return" line="40" description="Array of constants" type="array">
             <type>array</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="55" package="Default">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="59" package="Default">
         <name>isValidName</name>
         <full_name>\BasicEnum::isValidName()</full_name>
-        <docblock line="55">
-          <description>Checks if given const name is present in class.</description>
+        <docblock line="59">
+          <description>Check if given const name is present in class.</description>
           <long-description></long-description>
-          <tag name="param" line="55" description="&lt;p&gt;constant name&lt;/p&gt;" type="string" variable="$name">
+          <tag name="param" line="59" description="&lt;p&gt;Constant name&lt;/p&gt;" type="string" variable="$name">
             <type>string</type>
           </tag>
-          <tag name="param" line="55" description="&lt;p&gt;if name should be checked case sensitive&lt;/p&gt;" type="boolean" variable="$strict">
+          <tag name="param" line="59" description="&lt;p&gt;If name should be checked case sensitive&lt;/p&gt;" type="boolean" variable="$strict">
             <type>boolean</type>
           </tag>
-          <tag name="return" line="55" description="if enum name exists" type="boolean">
+          <tag name="return" line="59" description="If enum name exists" type="boolean">
             <type>boolean</type>
           </tag>
         </docblock>
@@ -679,16 +1953,16 @@ Not including attribute is only programmer's fault.</long-description>
           <type>boolean</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="72" package="Default">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="76" package="Default">
         <name>isValidValue</name>
         <full_name>\BasicEnum::isValidValue()</full_name>
-        <docblock line="72">
-          <description>Checks if given value is represented by some constant</description>
+        <docblock line="76">
+          <description>Check if given value is represented by some constant.</description>
           <long-description></long-description>
-          <tag name="param" line="72" description="&lt;p&gt;enum value&lt;/p&gt;" type="integer" variable="$value">
+          <tag name="param" line="76" description="&lt;p&gt;Enum value&lt;/p&gt;" type="integer" variable="$value">
             <type>integer</type>
           </tag>
-          <tag name="return" line="72" description="if enum value exists" type="boolean">
+          <tag name="return" line="76" description="If enum value exists" type="boolean">
             <type>boolean</type>
           </tag>
         </docblock>
@@ -698,16 +1972,16 @@ Not including attribute is only programmer's fault.</long-description>
           <type>integer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="83" package="Default">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="87" package="Default">
         <name>getName</name>
         <full_name>\BasicEnum::getName()</full_name>
-        <docblock line="83">
-          <description>Gets name of enum from given value</description>
+        <docblock line="87">
+          <description>Get name of enum from given value.</description>
           <long-description></long-description>
-          <tag name="param" line="83" description="&lt;p&gt;enum value&lt;/p&gt;" type="integer" variable="$value">
+          <tag name="param" line="87" description="&lt;p&gt;Enum value&lt;/p&gt;" type="integer" variable="$value">
             <type>integer</type>
           </tag>
-          <tag name="return" line="83" description="enum name or NULL if value not present" type="string|null">
+          <tag name="return" line="87" description="Enum name or NULL if value not present" type="string|null">
             <type>string</type>
             <type>null</type>
           </tag>
@@ -718,16 +1992,16 @@ Not including attribute is only programmer's fault.</long-description>
           <type>integer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="101" package="Default">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="105" package="Default">
         <name>getValue</name>
         <full_name>\BasicEnum::getValue()</full_name>
-        <docblock line="101">
-          <description>Get value from given enum name</description>
+        <docblock line="105">
+          <description>Get value from given enum name.</description>
           <long-description></long-description>
-          <tag name="param" line="101" description="&lt;p&gt;enum name&lt;/p&gt;" type="string" variable="$name">
+          <tag name="param" line="105" description="&lt;p&gt;Enum name&lt;/p&gt;" type="string" variable="$name">
             <type>string</type>
           </tag>
-          <tag name="return" line="101" description="enum value or NULL if name not present" type="integer|null">
+          <tag name="return" line="105" description="Enum value or NULL if name not present" type="integer|null">
             <type>integer</type>
             <type>null</type>
           </tag>
@@ -739,23 +2013,148 @@ Not including attribute is only programmer's fault.</long-description>
         </argument>
       </method>
     </class>
-    <parse_markers>
-      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-    </parse_markers>
-    <source>eJytVuFuGkcQ/s9TTCWkHBGFNon/2ME1RnaC5GAEOJEVRdZyzMHKy+5pdw+CWv+pqr5ZX6RP0tndOzjAJHZbJMtwzHzz7XzfzPL2l3SWVirNlxV4CefM8BhQZnMwWZoqbd1T99dR6UpgYiH6+88/avDqp5+P4APTeA99fp/99TujIBc3mnEDqVZTzeZAbxONCEYldknBx7BSGcRMgsYJN1bzcWYRuAUmJ02lYa4mPFk5HHqWyQlqsDMEi3puQCX+w7veDbxDiZoJ6GdjQYSveIzSIDAq7Z6YGU5g7HFcxqXjMMw5wKUiYGa5knVATt9rWKA29BleFzVywDoo7UAiZh1zDSp1eTWiuwLB7Ca1ceD4m1NOgEuPPVMpnWhGkHTGJRcCxgiZwSQTdQdBwfCpO3p/fTOCdu8WPrUHg3ZvdHtCwXam6FtcYIDi81RwQqZzaSbtiug7hA8Xg857Smmfd6+6o1s6BFx2R72L4RAurwfQhn57MOp2bq7aA+jfDPrXw4sGwBAdLXQA32hx4lWiNk7QMi5McfBbEtYQOzGBGVsgCRwjXxA3BjFZ5/viORAmlJz6Y1LwppFErpuAVLYOhki+nVmbHjeby+WyMZVZQ+lpUwQQ0zx1hJrOz57WBVmZilliPWZEPxbMmMLTZyyjhmo415ws2RFcojPinq8hcnNBzMgieW1jWXyvSPxEqGUjVvMma746enP05nXN12dj0p3FNhQMc+W4wK8VoBexgw6LnU2ddL49sZKEKq1x+S4o1XxBHgN6aqlPVR/gs9o+pwW9m6urk0qB6P879ZAwaAjsFmrx7ZlGm2mZ192vnsc9SiHJZOwGAKZoO0VCVMsP5V48gcigSI6P9+kGvuVo9zoUDZ+/nKwDH9bvqjETAicd39aWI3IXntz5Tke1ky0uP/gD3t3j6g6/UktMVAaoH6he2yVZ1ZgIJDlbIHEJg/CJOuFhtjBLBA4f73M54wuhFgV+PN1u7WMtyAV8CnJIf9izSGeG8b1xHZpyt0w8CEg2R/BjhwaldQvLN7VRpK09lDK339xqo6mo+rzCQB5lJ3CslEAasarLoC5SXZ+TLwzaf7EjRNMQuyGl4oZbIrbr2QKH8v0d5UGCrtu2DZtl17XcfGSCT3qUFXnS9TWjFiRMGCzrXt0MZCtv9q42W1bLoXatUx63LR/mBNZVtrTesKAURyDkz1kavaA6VtHaQf2ivsF1LlxDlbDy+lze+dBokx0o1OqhRu2pXlkwkXmbaMyN4i9buuRLLjjgGE7BU7o1qwHEi+jffk/pPP65Un90aVGotqWtf7Lpa/gYPabyN1oZUOoFWtlNVlPBQx31C9p7V+XHS7Sal9v7X9sXJvM3mdGvi82k0FXnNrBragCgK7UY9qc0lRoTZme/n8+YFfoFgbSuoORX98MtbJHWKR1ud4T8dC3cBbJfeUcbj7K9gR8eG6s8PFygB1XK21RSZ93Mp6zEveCztYO8jiV9QqGSQB7g+frkhveD/X/rE8R5TAAvkPQC7Vbe1cfn/0uBHir/AH7B2iw=</source>
+    <source>eJytVuFuGkcQ/s9TTCWkHBaFNon/2MY1RnaC5GAL40RWFFnLsQcrltvT7h4Etf5TVX2zvkifpDO7d3B3mMRui2TDLTPffDPfzCwnvySzpNY+OKjBAZwzI0LgcboAkyaJ0pZO6e+MpXamNHxgms/hRszTv35ncLJgOhF6fjZdMCFboVqconG7hnjOq6eSteSRheDvP/9owOuffj4sI6AR2Y1mwkCi1VSzBeDHSHMORkV2hcZHsFYphCwGzSfCWC3GqeUgLLB40kZOCzUR0Zpw8CyNJ1yDnXGwXC8MqMg9vBvcwTsec80k3KRjiWleiZDHhgPD0HRiZnwCY4dDHpfE4TbjAJcKgZkVKm4CF/i9hiXXBp/hTR4jA2yC0gQSMEvMNaiE/BpIdw2S2a1ra0/62ywnIGKHPVMJZjRDSMxxJaSEMYfU8CiVTYJAY/jUH72/vhtBd3APn7rDYXcwuj9GYxQOv+VL7qHEIpECkTEvzWK7RvqE8OFi2HuPLt3z/lV/dI9JwGV/NLi4vYXL6yF04aY7HPV7d1fdIdzcDW+uby9aALecaHEC+EaJI6cSlnHCLTaKyRO/R2ENspMTmLElR4FDLpbIjUGIrfN98QiESRVPXZpovC0kkutHECvbBIMkT2bWJkft9mq1ak3jtKX0tC09iGmftvK2dbQucAAwmEXWY4b0Q8mMqU7CuRbYkj0pYk6NuNPXENA0ITNskSy2sSycKxQ/kmpF09Jm7deHbw/fvmm4+GyMurPQ+oB+GokL/FoDfLl/SBHOlkwDqbf+LU6xFXospN51J1SzUMUYKraGQMkp0WKJjQd4arF4dWfgvLrOpwODu6ur41oewb2TpNwCDoYtgeZfnmluUx1nYbs7wTO7JxlEaRzSUMCU217uEDSyROklIggMl9HR0S5bT7doTa991vD5y/HG8HHzqR4yKfmk50rdISIP/uTBVT9oHJe4/ODSfJjz9QP/iiUxQRGguSd6o0qyrnkkOUrcgZivYOifsBIOpoRZILA/vc9Fjy+Imgf48bRc2qdKkAn4HGTv/rjTIb0ZD+dUoKmg/eIwIGYLDm4SueGxpR3matrKvTYtlDBaebTtcFDqzi/n7FAqhmOlJMepq5MHFpEGnHyyHYIrMSQ+OAshzS0GN8IisWrL5jjo7y47B+JlLXetXzbVphXmI5NiMkCvwJFubhh1IGLS8KLs9e04drJaV6UpdVoGVe2c4rSV2jAjsIlSknrLAl2IgPdfsCR4hXGswk3E9avmFpeacANVwMrii/jBmQZbb0+h0fQxGs9slSWTqesSzbM+cdcvXvuoRc5gX8cItJ7iRVr3KG5Juo/fU9rbv1jqj+QW+Gglbd3Jtq7+MXhK5W+U0qM0c7RiN1mNAfdVlNaza12VZRdptSiW9z+Xz0+mv2UuNpOCtx8tYNLSA+Atmw/7c4qKhfGzs1vPF8wK/qjguK2g0K/0W85vkc4pJlcdITddS7o/diNXtHEo5QX8+NRYZeb++tyvki9TQZ7N2nnWTtyUvqpPJmRBIB+poJADeLlAWce7yf6/BfLqPKWAUyh2ClUjVwVy/v9SocfaP8s174I=</source>
   </file>
-  <file path="api.php" generated-path="api.html" hash="f047859aede8930672b87597685949ad" package="Default">
+  <file path="lib/xml_tags.php" generated-path="lib.xml_tags.html" hash="76efe96bdaa1b2392a7790fd1f96c413" package="Default">
     <docblock line="0">
-      <description></description>
+      <description>Basic XML tags class</description>
       <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
     </docblock>
-    <parse_markers>
-      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-    </parse_markers>
-    <source>eJydVdtu20YQfddXTP0QSYYgpg36YictWFu2CTiSoEtSPwmr5VBcaMVld5cShCJAURT9gX5TfyRf0pkVKTmG3aAlIEDkzpyZc+YM+fbHMi9brei8BefwXqgC4nECqvBoMyGRn/Iv1hqE91YtK48OhEXIRZFqTEE4uB3MwOIvFTrfh4GQOWxMWmkE5QhK6iqluMyaDUOlKsvQYuEhUxRSFSlaOBOlOqMji9Ibu+83da9MudeYeeh8/vOPLnz3+tvvqUuLaxirdfX374KCOG6WU6nSmpUVG66aWURwJvM7Cr6AvalAioKaTJWrWYDyQBQiY7lble0Zh54dGvI5AmmwcWCycHM7nMMtFmiFhnG11ErCvZJYOGQFSn7icqK5DDicccM9TOse4MYQsPDKFD1ARecWtmgd3cObpkYN2ANjGaQjPHduwZSc16V296CFP6X2X6B/YpnSAAJ2bkpilBMkcdwpmueSxHeYVbrHEBQMH5PZ3Wg+g3j4AB/jySQezh4uKdjnhk5xiwcotSm1ImTiZUXh99R+cM9gcnVHKfFPyX0yeyAScJPMhoPpFG5GE4hhHE9mydX8Pp7AeD4Zj6aDPsAUua1gtH+ROAtTIhlT9EJp1xB/oME66k6n5Mct0oAlqi27EiRZ5+vDYxChTbEKNCn4JCQ1l2RQGN8DR02+zb0vL6Jot9v1V0XVN3YV6QOIi37ghqJWi7eATLwwhURoS1NkatWnDWtfPjnSahltha3PaP/O4ef397x4llZH8rwZEGVu+GBxN4ivBxPohxta0cVoPBjWiVc5ynWQSNJcaLGOm8oGB5XRyNsOtkKrlEHpQacjOSkOgZ32Ia/d7cKrV9Ah70jhUG7KDq0o2W2hirLynWQ4ns8WtOw9OGbQX6phjUrbXfjmHbwmjF9bQBdaa+yhwND4D1z8WOhx1mXrU6AR1v3IpNmNL6nwyZIccDz+/NtfB3JV4bxYagxediasyuFNRkNwtA6CZafhkuUtZKLSvvW8FjX0fxHjmEL/ub2nUkRRqMCTqCfU9M8NleAN0KsBQ2xo6H9P4B2XheZq6rJs8SGmqdyCRxfz/Do55vRhMJkmoyE5cLyIh9eTUXJ9ZPni0BuE3rPplyH5U+2CRxaovyEnB9Tj+mJah6D2c1KfElVj/nodnOk13yVyT8hztP703XpZhqeF+OIZwZmu5Hp/dnFErENdFA4OGw5Li2JN+9qkphg8ePG8YnUxKhswaElqACYYMphGLVAhNkjvYsevKhKOPjNPFNWG2kyNrDZsPVJR8pMOKf8P056PmA==</source>
+    <class final="false" abstract="true" namespace="" line="28" package="Default">
+      <extends/>
+      <name>XML</name>
+      <full_name>\XML</full_name>
+      <docblock line="28">
+        <description>Basic XML tag handler</description>
+        <long-description></long-description>
+        <tag name="package" line="28" description="Default"/>
+      </docblock>
+      <property static="true" visibility="private" namespace="" line="31" package="Default">
+        <name>$opened</name>
+        <full_name>\XML::opened</full_name>
+        <default>false</default>
+        <docblock line="31">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="31" description="&lt;p&gt;If XML document has been opened&lt;/p&gt;" type="boolean" variable="">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="true" visibility="private" namespace="" line="33" package="Default">
+        <name>$APIOpened</name>
+        <full_name>\XML::APIOpened</full_name>
+        <default>false</default>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="33" description="&lt;p&gt;If API tag has been opened&lt;/p&gt;" type="boolean" variable="">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="38" package="Default">
+        <name>open</name>
+        <full_name>\XML::open()</full_name>
+        <docblock line="38">
+          <description>Open XML document.</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="46" package="Default">
+        <name>openIfNotOpened</name>
+        <full_name>\XML::openIfNotOpened()</full_name>
+        <docblock line="46">
+          <description>Open XML document if it wasn't previously opened.</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="57" package="Default">
+        <name>openAPI</name>
+        <full_name>\XML::openAPI()</full_name>
+        <docblock line="57">
+          <description>Open API tag.</description>
+          <long-description>If VERSION_API is defined then add version info. It can be not defined if
+error appeared while getting VERSION_API from db.</long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="71" package="Default">
+        <name>openAPIIfNotOpened</name>
+        <full_name>\XML::openAPIIfNotOpened()</full_name>
+        <docblock line="71">
+          <description>Open API tag if it wasn't previously opened.</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="85" package="Default">
+        <name>debug</name>
+        <full_name>\XML::debug()</full_name>
+        <docblock line="85">
+          <description>Write debug tag.</description>
+          <long-description>For example: _&amp;lt;dbg attr="fsad"&amp;gt;Message&amp;lt;/dbg&amp;gt;_</long-description>
+          <tag name="param" line="85" description="&lt;p&gt;Debug message&lt;/p&gt;" type="string" variable="$msg">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="85" description="&lt;p&gt;Tag attribute array&lt;/p&gt;" type="array" variable="$attrib">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$msg</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$attrib</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="96" package="Default">
+        <name>closeAPI</name>
+        <full_name>\XML::closeAPI()</full_name>
+        <docblock line="96">
+          <description>Close API tag.</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+    </class>
+    <source>eJylVn9vIjcQ/T+fYoqig0R0uWt1UpVAEi4Nd0gJQUAujdoqMruzu1a89sr2kkNV/qlO/Wb9Iv0kHe8PNtDkQCoSENZvnt/MvLHTPU3jdK9zeLgHh/CBGe7DL1eXYFlkwBfMGPfcvc9YZmOl4YppfIAxf8j+/pNBN2E65frhLEoYF56vkhMCd/aIMY86V+lSYGih9c9fXw/gh7fv3q8zEMjhZjE3kGoVaZYA/RlqRDAqtI8EPoKlysBnEjQG3FjN55lF4BaYDDqkKVEBD5eOh55lMkANNkawqBMDKsx/fBzdwEeUqJmAcTYXlOgl91EaBEZbuycmxgDmOY+LGDgN01IDDBQRM8uVbANyWtewQG3oN/xY7VEStkFpR9Ji1inXoFIXd0BylyCYrUO9V9KvswyAy5w7VillFBMl5fjIhYA5QmYwzETbURAYboezT9c3M+iP7uC2P5n0R7O7YwJT42gVF1hQ8SQVnJgpL82kXZJ8x3B1MTn/RCH9D8PL4eyOkoDBcDa6mE5hcD2BPoz7k9nw/OayP4HxzWR8Pb3wAKboZKEj+EaJw7xLVMYALRnFVInfUWMNqRMBxGyB1GAf+YK0MfDJOtub50iYUDLK0yRwXUgSNwxBKtsGQyK7sbXpUafz+PjoRTLzlI46oiAxnROvsu1/B4GUyUCgzhFsTp1hvi2GI4f8sQf0yj8oHM4WTMNcKYFkWBLgIIHyswSlJSpDfaM+UDclpUmMLs5YcpZPwvmC7AH75WoPQiYMHr/K3R8PS4U70RL8+gXmij7/puwdZk22V66ssYaZ9J2t8z1bB2UZ3Av9WEGze/olEZXRe4133tsGoPRpVGXUa9zMBt//1Dg9aR6vwgyK8Oiozt3qrBT4tJtM4GE+HMzIpqWsccFVZsSyrMr2LIbhSNmiQmsJEW/ruzV5z1dr7UUl6oyetqkv+1cpcy39fDGZDq9H927JnQQYclcOmgIJLAhWhw6XofJgaPNzkY4C8vkKzMOKELWmyWNpinSG0cTHXCBEaC01YW2rUKsEgvn2GhF4rTZ15mvVq4uwaQuW8mdNd6XlxqBtlfNNJTaFPvNr83OR7G+0afP3g82iF4S1xZrgwVYWwjQbzc0e1XQvOPL52Oxkymos/68fiWcXS670ve7KvGu7GfNWc+vO6XkWrXmz+h6QofALozuELub7N8IeB/MImLW61wgNCxpvInt8hcawCN1qh5bdo/tNorOUuevO3XRkxv3ERPBzvmtSBG/g3GW1hH23EZ/DjBV7Fv8K5GvfLGeeT8tt0l5x9Iq41sELhxeJfmYEur6Q+TG0qlA6b/clSxB6J7C/YCLDV8zpPFkgyXeFRQv8dh86qCsKAbuuiJUzX27buVB0z24cKC/XwnfQzTku8+7QeG5s9PQvJ8rrOg==</source>
   </file>
+  <file path="api.php" generated-path="api.html" hash="ff107eb24a1378632385eaf64caa1909" package="Default">
+    <docblock line="0">
+      <description>Main API interface</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="author" line="0" description="Marek Pikuła" link="mailto:marpirk@gmail.com"/>
+    </docblock>
+    <function namespace="" line="43" package="Default">
+      <name>__autoload</name>
+      <full_name>\__autoload()</full_name>
+      <docblock line="43">
+        <description>Autoload module php files.</description>
+        <long-description></long-description>
+        <tag name="package" line="43" description="Default"/>
+        <tag name="param" line="43" description="&lt;p&gt;Class name&lt;/p&gt;" type="string" variable="$class_name">
+          <type>string</type>
+        </tag>
+      </docblock>
+      <argument line="0" by_reference="false">
+        <name>$class_name</name>
+        <default></default>
+        <type>string</type>
+      </argument>
+    </function>
+    <source>eJyFVdtu4zYQfc9XDIIAdgJD7gX74k23UQ0nayDrGI7TbZ4MmhpZhClSJal4jWJfisX+WX+kX9IZSrIT7KUBAsjizOGcM2dGl79WRXUyvLg4gQt4J5SBdD4FZQK6XEjkt/x/JepQWEcRDrcwV9v6n78FXJbCVcptrzalUDqRtnxDwcMTwoNUaxAhOLWuA3qgPCiEyTRmIDzcTJbg8M8afUhgImQBpc1qjaA8XS51nVFc7mzJl2cqz9GhCZArCqlNhg5ORaVO6cihDNbtk67Ssa32GvMA/X8/fzqHn3748dXLqimI45YFXVU5u3Gi5Ftzhwje5mFHwSPY2xqkMFRkpnzLAlQAojAkHahale8Zh941BYUCgVQrPdg8/riZPcANGnRCw7xeayXhVkk0HlmBit/4gmiuIw5nXHMN920NcG0JWARlzQBQ0bmDJ3SefsPP3R0t4ACsY5C+CFy5A1tx3jmVuwctwjE1+Qb9I8uMGhCxC1sRo4IgieNOUT/XJL7HvNYDhqBgeD9dvr17WEI6e4T36WKRzpaPrymYzEKn+IQNlCorrQiZeDlhwp7Kj36bLMZvKSX9bXo7XT4SCbieLmeT+3u4vltACvN0sZyOH27TBcwfFvO7+0kCcI9cVrTmdyTOY5dIxgwDmdN3xB+psZ6q0xn58QmpwRLVE7sSJFnn/5vHIEJbs4k0KfgoJBU3zcHYMABPRV4WIVSj4XC32yUbUyfWbYa6AfHDN0k3KhcwDVSLh2BZ4Vw5TwBrlILE5nqkNT6QbDwacOYxBGU2nrN5hGgCVtZIhF4zQn64aepOaLJ7r+MFY2tytalddBO32yDGCSORyGJiLdiUUqL/CqyMyc/Q0uNYywLllqr5Mkur9bCZf/8sddHENDd7kSP88e4WgiA6cTt8E+pDqVcc9gxr4px1zWahumk9KOpVJVxgzXiLfR8ROb2F6xZgWgerrci6bUSncef4w3q5ogtoYnhYCPhMauH9yogSYcyPwI+xsXltZFR7tRItav9Z+Dn8dQL0dxZX2i/H5vUgYXTO2KF7mZJAry2YU1UOfc5e4QcaXt+PUOcdcIxoNmlDOh43mR9PPjbGu8EABz/xuj24Ifm6aNl61cV30lEDRyNaFYYkn+YzG+7oGbP+OZ2dtVYkggZ33UDFo2hLdk87qVHvwweDb2d+0V+N3/qtRL0DxSMEhR5Tyd5PQquMdzWfeDvolOBNRsic7Gl66bPDCtJ6XClT1aE/nc0fliv6OA3gi9v4T/KcnOpabvenIziLDy23W34mZrB2KLZEsMvJMBe1DiOIhmu4kEq/c4kHTnRfBOsdAGDYOJQZtOpEm+1oUdCGIdXo6/Cym2NtqbzMyrrkjyURlfyG5f4Pu/qSpA==</source>
+  </file>
+  <package name="Attributes" full_name="Attributes"/>
+  <package name="Config" full_name="Config">
+    <package name="DB" full_name="Config\DB"/>
+  </package>
   <package name="Default" full_name="Default"/>
+  <package name="Variables" full_name="Variables"/>
   <package name="global" full_name="global"/>
   <namespace name="global" full_name="global"/>
   <namespace name="Config" full_name="Config">

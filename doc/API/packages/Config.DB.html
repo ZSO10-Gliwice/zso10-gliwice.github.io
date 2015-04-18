@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>ZSO10 App – API » Default</title>
+<title>ZSO10 App – API » Config\DB</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -62,111 +62,99 @@
 <li class="nav-header">
 <i class="icon-map-marker"></i> Packages</li>
 <li>
-<a href="../packages/Default.html" title="Default"><i class="icon-folder-open"></i>Default</a><ul class="nav nav-list nav-packages"></ul>
+<a href="../packages/Config.DB.html" title="DB"><i class="icon-folder-open"></i>DB</a><ul class="nav nav-list nav-packages"></ul>
 </li>
 <li class="nav-header">
-<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
-<li class="function  "><a href="#function___autoload" title="__autoload() :: Autoload module php files."><span class="description">Autoload module php files.</span><pre>__autoload</pre></a></li>
-<li class="nav-header">
-<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
-<li><a href="#Lucky" title="Lucky numbers module">Lucky</a></li>
-<li><a href="#LuckyError" title="Error for Lucky module">LuckyError</a></li>
-<li><a href="#Module" title="Abstract module parent class">Module</a></li>
-<li><a href="#ModuleList" title="Enum list of available modules">ModuleList</a></li>
-<li><a href="#General" title="General module">General</a></li>
-<li><a href="#GeneralError" title="Error for General module">GeneralError</a></li>
-<li><a href="#APIError" title="Enum static class for handling error reporting">APIError</a></li>
-<li><a href="#BasicEnum" title="Enumerator base class">BasicEnum</a></li>
-<li><a href="#XML" title="Basic XML tag handler">XML</a></li>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#constant_database" title="database() :: Main ZSO10 App database name"><span class="description">Main ZSO10 App database name</span><pre>database</pre></a></li>
+<li class="constant  "><a href="#constant_host" title="host() :: Database hostname"><span class="description">Database hostname</span><pre>host</pre></a></li>
+<li class="constant  "><a href="#constant_password" title="password() :: Database password"><span class="description">Database password</span><pre>password</pre></a></li>
+<li class="constant  "><a href="#constant_port" title="port() :: Database connection port"><span class="description">Database connection port</span><pre>port</pre></a></li>
+<li class="constant  "><a href="#constant_table_prefix" title="table_prefix() :: Table name prefix."><span class="description">Table name prefix.</span><pre>table_prefix</pre></a></li>
+<li class="constant  "><a href="#constant_user" title="user() :: Database user name"><span class="description">Database user name</span><pre>user</pre></a></li>
 </ul>
 </div>
 <div class="span8 package-contents">
 <ul class="breadcrumb"><li>
-<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Default.html">Default</a></li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Config.html">Config</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Config.DB.html">DB</a>
+</li>
 </li></ul>
 <div class="package-indent">
 <h3>
-<i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
-<a xmlns:php="http://php.net/xsl" id="function___autoload"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function___autoload " data-toggle="collapse" data-target=".function___autoload .collapse" title="">
-<h2>Autoload module php files.</h2>
-<pre>__autoload(string $class_name) </pre>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a xmlns:php="http://php.net/xsl" id="constant_database"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_database" data-toggle="collapse" data-target=".constant_database .collapse" title="">
+<h2>Main ZSO10 App database name</h2>
+<pre>database = 'zso10app' </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>package</th>
-<td><a href="../packages/Default.html">Default</a></td>
+<td><a href="../packages/Config.DB.html">Config\DB</a></td>
 </tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$class_name</h4>
-<code>string</code><p>Class name</p></div>
 </div></div>
 </div>
-<h3>
-<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
-<div xmlns:php="http://php.net/xsl" id="APIError" class="element ajax clickable class">
-<h1>APIError<a href="../classes/APIError.html">¶</a>
-</h1>
-<p class="short_description">Enum static class for handling error reporting</p>
-<div class="details collapse"></div>
-<a href="../classes/APIError.html" class="more">« More »</a>
+<a xmlns:php="http://php.net/xsl" id="constant_host"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_host" data-toggle="collapse" data-target=".constant_host .collapse" title="">
+<h2>Database hostname</h2>
+<pre>host = 'localhost' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Config.DB.html">Config\DB</a></td>
+</tr></table>
+</div></div>
 </div>
-<div xmlns:php="http://php.net/xsl" id="BasicEnum" class="element ajax clickable class">
-<h1>BasicEnum<a href="../classes/BasicEnum.html">¶</a>
-</h1>
-<p class="short_description">Enumerator base class</p>
-<div class="details collapse"></div>
-<a href="../classes/BasicEnum.html" class="more">« More »</a>
+<a xmlns:php="http://php.net/xsl" id="constant_password"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_password" data-toggle="collapse" data-target=".constant_password .collapse" title="">
+<h2>Database password</h2>
+<pre>password = 'fsadpass1029' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Config.DB.html">Config\DB</a></td>
+</tr></table>
+</div></div>
 </div>
-<div xmlns:php="http://php.net/xsl" id="General" class="element ajax clickable class">
-<h1>General<a href="../classes/General.html">¶</a>
-</h1>
-<p class="short_description">General module</p>
-<div class="details collapse"></div>
-<a href="../classes/General.html" class="more">« More »</a>
+<a xmlns:php="http://php.net/xsl" id="constant_port"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_port" data-toggle="collapse" data-target=".constant_port .collapse" title="">
+<h2>Database connection port</h2>
+<pre>port = '3306' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Config.DB.html">Config\DB</a></td>
+</tr></table>
+</div></div>
 </div>
-<div xmlns:php="http://php.net/xsl" id="GeneralError" class="element ajax clickable class">
-<h1>GeneralError<a href="../classes/GeneralError.html">¶</a>
-</h1>
-<p class="short_description">Error for General module</p>
-<div class="details collapse"></div>
-<a href="../classes/GeneralError.html" class="more">« More »</a>
+<a xmlns:php="http://php.net/xsl" id="constant_table_prefix"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_table_prefix" data-toggle="collapse" data-target=".constant_table_prefix .collapse" title="">
+<h2>Table name prefix.</h2>
+<pre>table_prefix = 'app_' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>For example: app_lucky</p></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Config.DB.html">Config\DB</a></td>
+</tr></table>
+</div></div>
 </div>
-<div xmlns:php="http://php.net/xsl" id="Lucky" class="element ajax clickable class">
-<h1>Lucky<a href="../classes/Lucky.html">¶</a>
-</h1>
-<p class="short_description">Lucky numbers module</p>
-<div class="details collapse"></div>
-<a href="../classes/Lucky.html" class="more">« More »</a>
-</div>
-<div xmlns:php="http://php.net/xsl" id="LuckyError" class="element ajax clickable class">
-<h1>LuckyError<a href="../classes/LuckyError.html">¶</a>
-</h1>
-<p class="short_description">Error for Lucky module</p>
-<div class="details collapse"></div>
-<a href="../classes/LuckyError.html" class="more">« More »</a>
-</div>
-<div xmlns:php="http://php.net/xsl" id="Module" class="element ajax clickable class">
-<h1>Module<a href="../classes/Module.html">¶</a>
-</h1>
-<p class="short_description">Abstract module parent class</p>
-<div class="details collapse"></div>
-<a href="../classes/Module.html" class="more">« More »</a>
-</div>
-<div xmlns:php="http://php.net/xsl" id="ModuleList" class="element ajax clickable class">
-<h1>ModuleList<a href="../classes/ModuleList.html">¶</a>
-</h1>
-<p class="short_description">Enum list of available modules</p>
-<div class="details collapse"></div>
-<a href="../classes/ModuleList.html" class="more">« More »</a>
-</div>
-<div xmlns:php="http://php.net/xsl" id="XML" class="element ajax clickable class">
-<h1>XML<a href="../classes/XML.html">¶</a>
-</h1>
-<p class="short_description">Basic XML tag handler</p>
-<div class="details collapse"></div>
-<a href="../classes/XML.html" class="more">« More »</a>
+<a xmlns:php="http://php.net/xsl" id="constant_user"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_user" data-toggle="collapse" data-target=".constant_user .collapse" title="">
+<h2>Database user name</h2>
+<pre>user = 'zso10app' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Config.DB.html">Config\DB</a></td>
+</tr></table>
+</div></div>
 </div>
 </div>
 </div>

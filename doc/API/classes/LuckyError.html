@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>ZSO10 App – API » \APIError</title>
+<title>ZSO10 App – API » \LuckyError</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -67,26 +67,28 @@
 <li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_endError" title="endError() :: Write XML error, end document and close()."><span class="description">Write XML error, end document and close().</span><pre>endError()</pre></a></li>
-<li class="method public "><a href="#method_error" title="error() :: Write XML error."><span class="description">Write XML error.</span><pre>error()</pre></a></li>
-<li class="method public "><a href="#method_errorRuntimeError" title="errorRuntimeError() :: Throw runtime error for wrong error attribute."><span class="description">Throw runtime error for wrong error attribute.</span><pre>errorRuntimeError()</pre></a></li>
+<li class="method public inherited"><a href="#method_endError" title="endError() :: Write XML error, end document and close()."><span class="description">Write XML error, end document and close().</span><pre>endError()</pre></a></li>
+<li class="method public inherited"><a href="#method_error" title="error() :: Write XML error."><span class="description">Write XML error.</span><pre>error()</pre></a></li>
+<li class="method public inherited"><a href="#method_errorRuntimeError" title="errorRuntimeError() :: Throw runtime error for wrong error attribute."><span class="description">Throw runtime error for wrong error attribute.</span><pre>errorRuntimeError()</pre></a></li>
 <li class="method public inherited"><a href="#method_getName" title="getName() :: Get name of enum from given value."><span class="description">Get name of enum from given value.</span><pre>getName()</pre></a></li>
 <li class="method public inherited"><a href="#method_getValue" title="getValue() :: Get value from given enum name."><span class="description">Get value from given enum name.</span><pre>getValue()</pre></a></li>
 <li class="method public inherited"><a href="#method_isValidName" title="isValidName() :: Check if given const name is present in class."><span class="description">Check if given const name is present in class.</span><pre>isValidName()</pre></a></li>
 <li class="method public inherited"><a href="#method_isValidValue" title="isValidValue() :: Check if given value is represented by some constant."><span class="description">Check if given value is represented by some constant.</span><pre>isValidValue()</pre></a></li>
-<li class="method public "><a href="#method_runtimeError" title="runtimeError() :: Throw runtime error with given message (including default error message)."><span class="description">Throw runtime error with given message (including default error message).</span><pre>runtimeError()</pre></a></li>
+<li class="method public inherited"><a href="#method_runtimeError" title="runtimeError() :: Throw runtime error with given message (including default error message)."><span class="description">Throw runtime error with given message (including default error message).</span><pre>runtimeError()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
-<li class="method protected "><a href="#method_getDefaultMessage" title="getDefaultMessage() :: Generate default message for given error."><span class="description">Generate default message for given error.</span><pre>getDefaultMessage()</pre></a></li>
+<li class="method protected "><a href="#method_getDefaultMessage" title="getDefaultMessage() :: Exceeded limit of request length"><span class="description">Exceeded limit of request length</span><pre>getDefaultMessage()</pre></a></li>
+<li class="method protected inherited"><a href="#method_getDefaultMessage" title="getDefaultMessage() :: Generate default message for given error."><span class="description">Generate default message for given error.</span><pre>getDefaultMessage()</pre></a></li>
 <li class="method protected "><a href="#method_validateAttributesArray" title="validateAttributesArray() :: Validate attribute array for given error id."><span class="description">Validate attribute array for given error id.</span><pre>validateAttributesArray()</pre></a></li>
+<li class="method protected inherited"><a href="#method_validateAttributesArray" title="validateAttributesArray() :: Validate attribute array for given error id."><span class="description">Validate attribute array for given error id.</span><pre>validateAttributesArray()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header private">» Private
                     <ul>
 <li class="method private inherited"><a href="#method_getConstants" title="getConstants() :: Get list of constants"><span class="description">Get list of constants</span><pre>getConstants()</pre></a></li>
-<li class="method private "><a href="#method_validateAttributeArray" title="validateAttributeArray() :: Validate attribute if not exists."><span class="description">Validate attribute if not exists.</span><pre>validateAttributeArray()</pre></a></li>
+<li class="method private inherited"><a href="#method_validateAttributeArray" title="validateAttributeArray() :: Validate attribute if not exists."><span class="description">Validate attribute if not exists.</span><pre>validateAttributeArray()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -99,6 +101,9 @@
 <li class="nav-header">
 <i title="Constants" class="icon-custom icon-constant"></i> Constants
                     <ul>
+<li class="constant  "><a href="#constant_dateFormat" title="dateFormat() :: "><span class="description">dateFormat</span><pre>dateFormat</pre></a></li>
+<li class="constant  "><a href="#constant_limit" title="limit() :: Date format invalid"><span class="description">Date format invalid</span><pre>limit</pre></a></li>
+<li class="constant  "><a href="#constant_mid" title="mid() :: Module id"><span class="description">Module id</span><pre>mid</pre></a></li>
 <li class="constant  "><a href="#constant_mid" title="mid() :: Module id"><span class="description">Module id</span><pre>mid</pre></a></li>
 <li class="constant  "><a href="#constant_runtime" title="runtime() :: Runtime error"><span class="description">Runtime error</span><pre>runtime</pre></a></li>
 </ul>
@@ -106,26 +111,26 @@
 </ul>
 </div>
 <div class="span8">
-<a xmlns:php="http://php.net/xsl" id="\APIError"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<a xmlns:php="http://php.net/xsl" id="\LuckyError"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
 <li>
 <a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/APIError.html">APIError</a>
+<span class="divider">\</span><a href="../classes/LuckyError.html">LuckyError</a>
 </li>
 </ul>
 <div xmlns:php="http://php.net/xsl" class="element class">
-<p class="short_description">Enum static class for handling error reporting</p>
+<p class="short_description">Error for Lucky module</p>
 <div class="details">
 <div class="long_description"></div>
 <table class="table table-bordered">
 <tr>
-<th>todo</th>
-<td>Per module errors</td>
+<th>see</th>
+<td><a href="%5CLucky">Lucky module</a></td>
 </tr>
 <tr>
-<th>author</th>
-<td><a href="mailto:marpirk@gmail.com">Marek Pikuła</a></td>
+<th>see</th>
+<td><a href="%5CAPIError">Basic error</a></td>
 </tr>
 <tr>
 <th>package</th>
@@ -133,15 +138,17 @@
 </tr>
 <tr>
 <th>inherited_from</th>
-<td>\BasicEnum</td>
+<td>\APIError</td>
 </tr>
 </table>
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method_endError"></a><div class="element clickable method public method_endError " data-toggle="collapse" data-target=".method_endError .collapse" title="public">
+<a id="method_endError"></a><div class="element clickable method public method_endError inherited" data-toggle="collapse" data-target=".method_endError .collapse" title="public">
 <h2>Write XML error, end document and close().</h2>
 <pre>endError(integer $id, string $msg<code> = ''</code>, array $attrib<code> = array()</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
@@ -156,10 +163,12 @@
 <code>array</code><p>Error attributes array</p></div>
 </div></div>
 </div>
-<a id="method_error"></a><div class="element clickable method public method_error " data-toggle="collapse" data-target=".method_error .collapse" title="public">
+<a id="method_error"></a><div class="element clickable method public method_error inherited" data-toggle="collapse" data-target=".method_error .collapse" title="public">
 <h2>Write XML error.</h2>
 <pre>error(integer $id, string $msg<code> = ''</code>, array $attribs<code> = array()</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
@@ -174,10 +183,12 @@
 <code>array</code><p>Array of attributes to include to XML tag</p></div>
 </div></div>
 </div>
-<a id="method_errorRuntimeError"></a><div class="element clickable method public method_errorRuntimeError " data-toggle="collapse" data-target=".method_errorRuntimeError .collapse" title="public">
+<a id="method_errorRuntimeError"></a><div class="element clickable method public method_errorRuntimeError inherited" data-toggle="collapse" data-target=".method_errorRuntimeError .collapse" title="public">
 <h2>Throw runtime error for wrong error attribute.</h2>
 <pre>errorRuntimeError(integer $id, boolean $should_contain, string $problem_attrib) </pre>
-<div class="labels"><span class="label">Static</span></div>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <table class="table table-bordered"><tr>
@@ -267,10 +278,12 @@
 <code>boolean</code>If enum value exists</div>
 </div></div>
 </div>
-<a id="method_runtimeError"></a><div class="element clickable method public method_runtimeError " data-toggle="collapse" data-target=".method_runtimeError .collapse" title="public">
+<a id="method_runtimeError"></a><div class="element clickable method public method_runtimeError inherited" data-toggle="collapse" data-target=".method_runtimeError .collapse" title="public">
 <h2>Throw runtime error with given message (including default error message).</h2>
 <pre>runtimeError(string $msg, array $args<code> = array()</code>) </pre>
-<div class="labels"><span class="label">Static</span></div>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <table class="table table-bordered"><tr>
@@ -287,9 +300,29 @@
 </div></div>
 </div>
 <a id="method_getDefaultMessage"></a><div class="element clickable method protected method_getDefaultMessage " data-toggle="collapse" data-target=".method_getDefaultMessage .collapse" title="protected">
+<h2>Exceeded limit of request length</h2>
+<pre>getDefaultMessage(integer $id, array $attribs<code> = array()</code>) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>In attributes array it's possible to include additional informations
+(it's mandatory for some errors).</p>
+<p>It's not directly end-user exposed so there's no need to translate
+these messages.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\APIError::getDefaultMessage()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+<div class="subelement argument"><h4>$attribs</h4></div>
+</div></div>
+</div>
+<a id="method_getDefaultMessage"></a><div class="element clickable method protected method_getDefaultMessage inherited" data-toggle="collapse" data-target=".method_getDefaultMessage .collapse" title="protected">
 <h2>Generate default message for given error.</h2>
 <pre>getDefaultMessage(integer $id, array $attribs<code> = array()</code>) : string</pre>
-<div class="labels"><span class="label">Static</span></div>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>In attributes array it's possible to include additional informations
 (it's mandatory for some errors).</p>
@@ -311,6 +344,25 @@ these messages.</p></div>
 <h2>Validate attribute array for given error id.</h2>
 <pre>validateAttributesArray(integer $id, array $arr) </pre>
 <div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Some errors have some mandatory attributes, which have to be included.
+If some attribute is not included, then runtime error is thrown.
+Not including attribute is only programmer's fault.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\APIError::validateAttributesArray()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+<div class="subelement argument"><h4>$arr</h4></div>
+</div></div>
+</div>
+<a id="method_validateAttributesArray"></a><div class="element clickable method protected method_validateAttributesArray inherited" data-toggle="collapse" data-target=".method_validateAttributesArray .collapse" title="protected">
+<h2>Validate attribute array for given error id.</h2>
+<pre>validateAttributesArray(integer $id, array $arr) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>Some errors have some mandatory attributes, which have to be included.
 If some attribute is not included, then runtime error is thrown.
@@ -337,10 +389,12 @@ Not including attribute is only programmer's fault.</p></div>
 <code>array</code>Array of constants</div>
 </div></div>
 </div>
-<a id="method_validateAttributeArray"></a><div class="element clickable method private method_validateAttributeArray " data-toggle="collapse" data-target=".method_validateAttributeArray .collapse" title="private">
+<a id="method_validateAttributeArray"></a><div class="element clickable method private method_validateAttributeArray inherited" data-toggle="collapse" data-target=".method_validateAttributeArray .collapse" title="private">
 <h2>Validate attribute if not exists.</h2>
 <pre>validateAttributeArray(string $name, integer $id, array $arr) </pre>
-<div class="labels"><span class="label">Static</span></div>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>If <code>$name</code> exists in <code>$arr</code>, throws <code>errorRuntimeError($id, false, $name)</code>.</p></div>
 <h3>Parameters</h3>
@@ -369,6 +423,30 @@ Not including attribute is only programmer's fault.</p></div>
 </div>
 <h3>
 <i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_dateFormat"> </a><div class="element clickable constant  constant_dateFormat" data-toggle="collapse" data-target=".constant_dateFormat .collapse" title="">
+<h2>dateFormat</h2>
+<pre>dateFormat = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_limit"> </a><div class="element clickable constant  constant_limit" data-toggle="collapse" data-target=".constant_limit .collapse" title="">
+<h2>Date format invalid</h2>
+<pre>limit = 2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_mid"> </a><div class="element clickable constant  constant_mid" data-toggle="collapse" data-target=".constant_mid .collapse" title="">
+<h2>Module id</h2>
+<pre>mid = \ModuleList::lucky </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\APIError::mid</td>
+</tr></table>
+</div></div>
+</div>
 <a id="constant_mid"> </a><div class="element clickable constant  constant_mid" data-toggle="collapse" data-target=".constant_mid .collapse" title="">
 <h2>Module id</h2>
 <pre>mid = 0 </pre>

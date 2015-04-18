@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>ZSO10 App – API » global</title>
+<title>ZSO10 App – API » Attributes</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -62,11 +62,79 @@
 <li class="nav-header">
 <i class="icon-map-marker"></i> Packages</li>
 <li>
-<span class="empty-package"><i class="icon-folder-close"></i>global</span><ul class="nav nav-list nav-packages"></ul>
+<a href="../packages/Attributes.html" title="Attributes"><i class="icon-folder-open"></i>Attributes</a><ul class="nav nav-list nav-packages"></ul>
 </li>
+<li class="nav-header">
+<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#function_checkAttrib" title="checkAttrib() :: Check if GET attribute exists and execute error if necessary."><span class="description">Check if GET attribute exists and execute error if necessary.</span><pre>checkAttrib</pre></a></li>
+<li class="function  "><a href="#function_errorAttribNotValid" title='errorAttribNotValid() :: Throw "attribute not valid" error.'><span class="description">Throw "attribute not valid" error.</span><pre>errorAttribNotValid</pre></a></li>
 </ul>
 </div>
-<div class="span8 package-contents"></div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Attributes.html">Attributes</a></li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
+<a xmlns:php="http://php.net/xsl" id="function_checkAttrib"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_checkAttrib " data-toggle="collapse" data-target=".function_checkAttrib .collapse" title="">
+<h2>Check if GET attribute exists and execute error if necessary.</h2>
+<pre>checkAttrib(string $name, boolean $exec_error<code> = true</code>) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/Attributes.html">Attributes</a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Attributes.html">Attributes</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Attribute name</p></div>
+<div class="subelement argument">
+<h4>$exec_error</h4>
+<code>boolean</code><p>If has to exec error if not found</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Attribute exists</div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_errorAttribNotValid"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_errorAttribNotValid " data-toggle="collapse" data-target=".function_errorAttribNotValid .collapse" title="">
+<h2>Throw "attribute not valid" error.</h2>
+<pre>errorAttribNotValid(string $attrib, string $valid<code> = ''</code>, string $msg<code> = ''</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/Attributes.html">Attributes</a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Attributes.html">Attributes</a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$attrib</h4>
+<code>string</code><p>Attribute name</p></div>
+<div class="subelement argument">
+<h4>$valid</h4>
+<code>string</code><p>The best valid value of attrib (not mandatory)</p></div>
+<div class="subelement argument">
+<h4>$msg</h4>
+<code>string</code><p>Additional error message (not mandatory)</p></div>
+</div></div>
+</div>
+</div>
+</div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>

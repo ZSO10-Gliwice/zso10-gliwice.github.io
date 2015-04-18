@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>ZSO10 App – API » \BasicEnum</title>
+<title>ZSO10 App – API » \Lucky</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -67,135 +67,166 @@
 <li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_getName" title="getName() :: Get name of enum from given value."><span class="description">Get name of enum from given value.</span><pre>getName()</pre></a></li>
-<li class="method public "><a href="#method_getValue" title="getValue() :: Get value from given enum name."><span class="description">Get value from given enum name.</span><pre>getValue()</pre></a></li>
-<li class="method public "><a href="#method_isValidName" title="isValidName() :: Check if given const name is present in class."><span class="description">Check if given const name is present in class.</span><pre>isValidName()</pre></a></li>
-<li class="method public "><a href="#method_isValidValue" title="isValidValue() :: Check if given value is represented by some constant."><span class="description">Check if given value is represented by some constant.</span><pre>isValidValue()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct() :: Main Lucky number API engine"><span class="description">Main Lucky number API engine</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_db_settings" title="db_settings() :: Database settings handler"><span class="description">Database settings handler</span><pre>db_settings()</pre></a></li>
+<li class="method public inherited"><a href="#method_db_settings" title="db_settings() :: Database settings handler"><span class="description">Database settings handler</span><pre>db_settings()</pre></a></li>
 </ul>
 </li>
-<li class="nav-header private">» Private
-                    <ul><li class="method private "><a href="#method_getConstants" title="getConstants() :: Get list of constants"><span class="description">Get list of constants</span><pre>getConstants()</pre></a></li></ul>
+<li class="nav-header protected">» Protected
+                    <ul><li class="method protected "><a href="#method_validate_date" title="validate_date() :: Validate if given date is in right format to prevent from SQL injection."><span class="description">Validate if given date is in right format to prevent from SQL injection.</span><pre>validate_date()</pre></a></li></ul>
 </li>
 <li class="nav-header">
 <i title="Properties" class="icon-custom icon-property"></i> Properties
-                    <ul></ul>
-</li>
-<li class="nav-header private">» Private
-                    <ul><li class="property private "><a href="#property_constCacheArray" title="$constCacheArray() :: "><span class="description">Cached array of constants</span><pre>$constCacheArray</pre></a></li></ul>
+                    <ul>
+<li class="property public "><a href="#property_settings" title="$settings() :: Array of settings"><span class="description"></span><pre>$settings</pre></a></li>
+<li class="property public "><a href="#property_settings" title="$settings() :: Array of settings"><span class="description"></span><pre>$settings</pre></a></li>
+</ul>
 </li>
 </ul>
 </div>
 <div class="span8">
-<a xmlns:php="http://php.net/xsl" id="\BasicEnum"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<a xmlns:php="http://php.net/xsl" id="\Lucky"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
 <li>
 <a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/BasicEnum.html">BasicEnum</a>
+<span class="divider">\</span><a href="../classes/Lucky.html">Lucky</a>
 </li>
 </ul>
 <div xmlns:php="http://php.net/xsl" class="element class">
-<p class="short_description">Enumerator base class</p>
+<p class="short_description">Lucky numbers module</p>
 <div class="details">
-<div class="long_description"></div>
+<div class="long_description"><p>Lucky numbers are in Polish <em>Szczęśliwe Numerki</em>. Every school day at the
+beginning of day two numbers are ruffled. People with those numbers
+in class register, cannot be asked by teacher during lesson.</p></div>
 <table class="table table-bordered">
 <tr>
 <th>author</th>
-<td><a href="">Brian Cline and Marek Pikuła
-(Basing on http://stackoverflow.com/a/254543)</a></td>
+<td><a href="mailto:marpirk@gmail.com">Marek Pikuła</a></td>
 </tr>
 <tr>
 <th>package</th>
 <td><a href="../packages/Default.html">Default</a></td>
 </tr>
+<tr>
+<th>inherited_from</th>
+<td>\Module</td>
+</tr>
 </table>
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method_getName"></a><div class="element clickable method public method_getName " data-toggle="collapse" data-target=".method_getName .collapse" title="public">
-<h2>Get name of enum from given value.</h2>
-<pre>getName(integer $value) : string | null</pre>
-<div class="labels"><span class="label">Static</span></div>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Main Lucky number API engine</h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$value</h4>
-<code>integer</code><p>Enum value</p></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>string</code><code>null</code>Enum name or NULL if value not present</div>
+<table class="table table-bordered">
+<tr>
+<th>todo</th>
+<td>Optimize and split</td>
+</tr>
+<tr>
+<th>global</th>
+<td>mysqli $dblink</td>
+</tr>
+</table>
 </div></div>
 </div>
-<a id="method_getValue"></a><div class="element clickable method public method_getValue " data-toggle="collapse" data-target=".method_getValue .collapse" title="public">
-<h2>Get value from given enum name.</h2>
-<pre>getValue(string $name) : integer | null</pre>
+<a id="method_db_settings"></a><div class="element clickable method public method_db_settings " data-toggle="collapse" data-target=".method_db_settings .collapse" title="public">
+<h2>Database settings handler</h2>
+<pre>db_settings(string $name, string $value) </pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$name</h4>
-<code>string</code><p>Enum name</p></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>integer</code><code>null</code>Enum value or NULL if name not present</div>
-</div></div>
-</div>
-<a id="method_isValidName"></a><div class="element clickable method public method_isValidName " data-toggle="collapse" data-target=".method_isValidName .collapse" title="public">
-<h2>Check if given const name is present in class.</h2>
-<pre>isValidName(string $name, boolean $strict<code> = false</code>) : boolean</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
+<div class="long_description"><p>Executed by <code>db_settings.php</code> on beginning. Saves values from settings
+table to <code>$settings</code>.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Module::db_settings()</td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$name</h4>
-<code>string</code><p>Constant name</p></div>
-<div class="subelement argument">
-<h4>$strict</h4>
-<code>boolean</code><p>If name should be checked case sensitive</p></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>boolean</code>If enum name exists</div>
-</div></div>
-</div>
-<a id="method_isValidValue"></a><div class="element clickable method public method_isValidValue " data-toggle="collapse" data-target=".method_isValidValue .collapse" title="public">
-<h2>Check if given value is represented by some constant.</h2>
-<pre>isValidValue(integer $value) : boolean</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
+<code>string</code><p>Name of settings entry</p></div>
 <div class="subelement argument">
 <h4>$value</h4>
-<code>integer</code><p>Enum value</p></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>boolean</code>If enum value exists</div>
+<code>string</code><p>Value of settings entry</p></div>
 </div></div>
 </div>
-<a id="method_getConstants"></a><div class="element clickable method private method_getConstants " data-toggle="collapse" data-target=".method_getConstants .collapse" title="private">
-<h2>Get list of constants</h2>
-<pre>getConstants() : array</pre>
+<a id="method_db_settings"></a><div class="element clickable method public method_db_settings inherited" data-toggle="collapse" data-target=".method_db_settings .collapse" title="public">
+<h2>Database settings handler</h2>
+<pre>db_settings(string $name, string $value) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Executed by <code>db_settings.php</code> on beginning. Saves values from settings
+table to <code>$settings</code>.</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="static::%24settings">Settings container</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Name of settings entry</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>Value of settings entry</p></div>
+</div></div>
+</div>
+<a id="method_validate_date"></a><div class="element clickable method protected method_validate_date " data-toggle="collapse" data-target=".method_validate_date .collapse" title="protected">
+<h2>Validate if given date is in right format to prevent from SQL injection.</h2>
+<pre>validate_date(string $date) : boolean</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
+<div class="long_description"><p>Date should be in format <code>Y-m-d</code>. If it's not <code>endError</code> is thrown.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CGeneralError::endError()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CGeneralError::parse"></a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$date</h4>
+<code>string</code><p>Date to validate</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
-<code>array</code>Array of constants</div>
+<code>boolean</code>If valid</div>
 </div></div>
 </div>
 <h3>
 <i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_constCacheArray"> </a><div class="element clickable property private property_constCacheArray" data-toggle="collapse" data-target=".property_constCacheArray .collapse" title="private">
-<h2>Cached array of constants</h2>
-<pre>$constCacheArray : array | null</pre>
+<a id="property_settings"> </a><div class="element clickable property public property_settings" data-toggle="collapse" data-target=".property_settings .collapse" title="public">
+<h2>Array of settings</h2>
+<pre>$settings </pre>
 <div class="row collapse"><div class="detail-description">
 <h3>Default</h3>
-<div class="subelement argument"><code>NULL</code></div>
+<div class="subelement argument"><code>array('range' => false, 'sort' => 0, 'limit' => 0)</code></div>
 </div></div>
 <div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>In form <code>$name =&gt; $value</code></p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Module::settings</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_settings"> </a><div class="element clickable property public property_settings" data-toggle="collapse" data-target=".property_settings .collapse" title="public">
+<h2>Array of settings</h2>
+<pre>$settings : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>In form <code>$name =&gt; $value</code></p></div></div></div>
 </div>
 </div>
 </div>
